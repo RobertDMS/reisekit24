@@ -2,9 +2,11 @@
 import Seo from '../components/Seo.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { site } from '../data/site.js';
 import '../styles/global.css';
 
 const { title, description, path, image, type, schema } = Astro.props;
+const isUnderConstruction = site.underConstruction;
 ---
 <!doctype html>
 <html lang="de">
@@ -15,11 +17,24 @@ const { title, description, path, image, type, schema } = Astro.props;
     <!-- GetYourGuide Analytics -->
     <script async defer src="https://widget.getyourguide.com/dist/pa.umd.production.min.js" data-gyg-partner-id="A65YU5Z"></script>
   </head>
-  <body>
-    <Header />
-    <main>
-      <slot />
-    </main>
-    <Footer />
+  <body class:list={[{ 'construction-body': isUnderConstruction }]}>
+    {isUnderConstruction ? (
+      <main class="construction-page" aria-labelledby="construction-title">
+        <section class="construction-card">
+          <img src={site.logo} alt="reisekit24 Logo" width="180" height="41" />
+          <p class="pill-label">Seite im Aufbau</p>
+          <h1 id="construction-title">reisekit24 ist bald verfügbar</h1>
+          <p class="lead">Wir bereiten gerade die ersten Reise-Tipps, Ausflüge und Partnerlinks vor. Schau bald wieder vorbei.</p>
+        </section>
+      </main>
+    ) : (
+      <>
+        <Header />
+        <main>
+          <slot />
+        </main>
+        <Footer />
+      </>
+    )}
   </body>
 </html>
