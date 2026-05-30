@@ -1,0 +1,14 @@
+---
+import WidgetPlaceholder from './WidgetPlaceholder.astro';
+import { categories } from '../data/categories.js';
+const category = categories.find((item) => item.id === 'ausfluege');
+---
+<WidgetPlaceholder
+  title="Ausflüge direkt beim Partner finden"
+  partner="GetYourGuide"
+  description="Hier kann später das GetYourGuide Widget eingebunden werden. Bis dahin führt der Button zum vorbereiteten Partnerlink."
+  image={category.image}
+  alt={category.alt}
+  href={category.affiliateUrl}
+  cta="Ausflüge ansehen"
+/>

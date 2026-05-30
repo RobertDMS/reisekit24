@@ -1,0 +1,14 @@
+---
+import WidgetPlaceholder from './WidgetPlaceholder.astro';
+import { categories } from '../data/categories.js';
+const category = categories.find((item) => item.id === 'hotels');
+---
+<WidgetPlaceholder
+  title="Hotel-Empfehlungen werden vorbereitet"
+  partner="Hotel-Guide"
+  description="Für Hotels ist aktuell noch kein aktiver Affiliate-Partner eingebunden. Diese Fläche bleibt als neutraler Hinweis vorbereitet."
+  image={category.image}
+  alt={category.alt}
+  href={category.affiliateUrl}
+  cta="Hotel-Empfehlungen folgen in Kürze"
+/>

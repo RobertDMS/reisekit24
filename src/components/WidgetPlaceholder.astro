@@ -1,0 +1,16 @@
+---
+const { title, partner, description, image, alt, href, cta = 'Zum Partner' } = Astro.props;
+---
+<section class="widget" aria-label={`${partner} Widget`}>
+  <img src={image} alt={alt} width="900" height="520" loading="lazy" />
+  <div class="content">
+    <p class="eyebrow">{partner}</p>
+    <h2>{title}</h2>
+    <p class="lead">{description}</p>
+    {href ? (
+      <a class="button" href={href} target="_blank" rel="sponsored noopener noreferrer"> {cta} </a>
+    ) : (
+      <span class="button muted-button">{cta}</span>
+    )}
+  </div>
+</section>

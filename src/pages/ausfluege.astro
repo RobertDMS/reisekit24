@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Faq from '../components/Faq.astro';
+import { categories } from '../data/categories.js';
+import { categoryFaq } from '../data/faqs.js';
+import { getYourGuideDestinations } from '../data/affiliateLinks.js';
+
+const page = categories.find((item) => item.id === 'ausfluege');
+const featuredDestination = getYourGuideDestinations.find((item) => item.destinationSlug === 'mallorca');
+const faq = [
+  ...categoryFaq.ausfluege,
+  { question: 'Ist GetYourGuide der aktive Partner?', answer: 'Ja. Für Ausflüge, Tickets und Aktivitäten ist GetYourGuide aktuell der aktive Partner von reisekit24.' }
+];
+const attractionTypes = [
+  { title: 'Tickets & Sehenswürdigkeiten', text: 'Eintrittskarten für Museen, Aussichtspunkte, historische Orte und beliebte Highlights.' },
+  { title: 'Geführte Touren', text: 'Stadtrundgänge, Food-Touren und lokale Erlebnisse mit Guide.' },
+  { title: 'Bootstouren & Natur', text: 'Ausflüge aufs Wasser, Küstentouren, Berge und besondere Naturerlebnisse.' },
+  { title: 'Familienfreundliche Aktivitäten', text: 'Ideen, die gut planbar sind und auch mit Kindern funktionieren.' }
+];
+const guideTips = [
+  'Prüfe Treffpunkt, Dauer und Stornierungsbedingungen vor der Buchung.',
+  'Achte auf echte Bewertungen und darauf, ob Eintritt oder Transfer enthalten ist.',
+  'Buche beliebte Tickets in der Hauptsaison frühzeitig, besonders bei engen Zeitfenstern.',
+  'Plane nicht zu viele Aktivitäten an einem Tag. Urlaub soll leicht bleiben.'
+];
+const getDestinationTypeLabel = (type) => (type === 'island' ? 'Insel' : 'Stadt');
+const getDestinationDescription = (item) =>
+  `${item.destinationName} ist eine gute Wahl für Tickets, Touren und geführte Erlebnisse in ${item.country}.`;
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer }
+  }))
+};
+---
+<BaseLayout
+  title="Ausflüge & Aktivitäten"
+  description="Finde Ausflüge, Tickets, Touren und Aktivitäten für deine Reise. GetYourGuide ist der aktive Partner für buchbare Erlebnisse."
+  path="/ausfluege/"
+  image={page.image}
+  schema={[faqSchema]}
+>
+  <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: page.title, href: '/ausfluege/' }]} />
+
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div class="content">
+        <p class="eyebrow">GetYourGuide Partner</p>
+        <h1>Ausflüge, Tickets und Aktivitäten finden</h1>
+        <p class="lead">Entdecke Touren, Eintrittskarten und Erlebnisse für deine nächste Reise. Buchbare Angebote führen aktuell zu GetYourGuide.</p>
+        <a class="button" href={featuredDestination.getYourGuideUrl} target="_blank" rel="sponsored noopener noreferrer">{featuredDestination.ctaLabel}</a>
+      </div>
+      <img src={page.image} alt={page.alt} width="900" height="620" />
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Kategorien</p>
+        <h2>Welche Art von Erlebnis suchst du?</h2>
+      </div>
+      <div class="grid four">
+        {attractionTypes.map((item) => (
+          <article class="benefit">
+            <strong>{item.title}</strong>
+            <p>{item.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Beliebt</p>
+        <h2>Beliebte Reiseziele für Ausflüge</h2>
+        <p class="lead">Diese Ziele eignen sich gut für Tickets, Touren und Tagesausflüge.</p>
+      </div>
+      <div class="affiliate-destination-grid">
+        {getYourGuideDestinations.map((item) => (
+          <article class="affiliate-destination-card">
+            <span class="category-badge">{getDestinationTypeLabel(item.type)}</span>
+            <h3>{item.destinationName}</h3>
+            <p class="affiliate-country">{item.country}</p>
+            <p>{getDestinationDescription(item)}</p>
+            <a class="button" href={item.getYourGuideUrl} target="_blank" rel="sponsored noopener noreferrer">{item.ctaLabel}</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-panel">
+        <div>
+          <p class="eyebrow">Aktiver Partner</p>
+          <h2>Ausflüge und Tickets bei GetYourGuide ansehen</h2>
+          <p class="lead">GetYourGuide ist aktuell der aktive Affiliate-Partner für buchbare Aktivitäten auf reisekit24.</p>
+        </div>
+        <a class="button" href={featuredDestination.getYourGuideUrl} target="_blank" rel="sponsored noopener noreferrer">{featuredDestination.ctaLabel}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container grid two">
+      <div class="content">
+        <p class="eyebrow">Kurzguide</p>
+        <h2>Worauf du bei Ausflügen achten solltest</h2>
+        <p class="lead">Ein guter Ausflug passt zu deinem Reisetempo, deinem Budget und deinem Tagesplan.</p>
+      </div>
+      <div class="info-list">
+        {guideTips.map((tip) => <p>{tip}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Häufige Fragen</h2>
+      </div>
+      <Faq items={faq} />
+    </div>
+  </section>
+</BaseLayout>

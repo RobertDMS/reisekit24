@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { posts } from '../../data/blog.js';
+---
+<BaseLayout
+  title="Blog"
+  description="Kurze Reise-Tipps und Guides zu Ausflügen, eSIM, Hotels und Pauschalreisen."
+  path="/blog/"
+>
+  <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Blog', href: '/blog/' }]} />
+
+  <section class="page-hero">
+    <div class="container content">
+      <p class="eyebrow">Travel Tipps & Guides</p>
+      <h1>Kurze Guides für bessere Reiseentscheidungen</h1>
+      <p class="lead">Answer-first, kompakt und praktisch: Hier findest du schnelle Orientierung für Ausflüge, mobile Daten, Hotels und Reiseplanung.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container grid three">
+      {posts.map((post) => (
+        <a class="card blog-card" href={`/blog/${post.slug}/`}>
+          <img class="image-cover" src={post.image} alt={post.alt} width="600" height="420" loading="lazy" />
+          <div class="card-body">
+            <span class="tag">{post.category}</span>
+            <h2 style="font-size:1.28rem;">{post.title}</h2>
+            <p>{post.description}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

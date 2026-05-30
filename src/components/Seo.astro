@@ -1,0 +1,37 @@
+---
+import { site } from '../data/site.js';
+import { images } from '../data/images.js';
+
+const {
+  title,
+  description = site.description,
+  path = '/',
+  image = images.hero.main,
+  type = 'website',
+  schema = []
+} = Astro.props;
+
+const pageTitle = title ? `${title} | ${site.name}` : site.name;
+const canonical = new URL(path, site.url).toString();
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: site.organization.name,
+    url: site.organization.url,
+    email: site.organization.email,
+    logo: new URL(site.logo, site.url).toString()
+  },
+  ...schema
+];
+---
+<title>{pageTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={image} />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json" set:html={JSON.stringify(schemas)} />

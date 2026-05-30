@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+<BaseLayout
+  title="Über uns"
+  description="reisekit24 ist ein unabhängiges Reise- und Affiliate-Portal für praktische Lösungen vor der Reise."
+  path="/ueber-uns/"
+>
+  <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Über uns', href: '/ueber-uns/' }]} />
+
+  <section class="page-hero">
+    <div class="container content">
+      <p class="eyebrow">Über reisekit24</p>
+      <h1>Ein unabhängiges Travel Kit für deine Reiseplanung</h1>
+      <p class="lead">reisekit24 hilft dir, praktische Reisebausteine schneller zu verstehen und besser einzuordnen: Ausflüge, Hotels, eSIM und Pauschalreisen.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container grid three">
+      <article class="benefit">
+        <strong>Praktisch statt kompliziert</strong>
+        <p>Wir halten Texte kurz, klar und hilfreich. Ziel ist schnelle Orientierung vor der Reise.</p>
+      </article>
+      <article class="benefit">
+        <strong>Affiliate-Modell</strong>
+        <p>Einige Links können Affiliate-Links sein. Wenn du darüber buchst, kann reisekit24 eine Provision erhalten. Für dich entstehen keine zusätzlichen Kosten.</p>
+      </article>
+      <article class="benefit">
+        <strong>Transparent aufgebaut</strong>
+        <p>Aktiv monetarisiert wird aktuell nur der Bereich Ausflüge über GetYourGuide. Weitere Anbieter werden erst ergänzt, wenn sie wirklich vorbereitet sind.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="notice">
+        reisekit24 verkauft keine Reisen selbst. Buchung, Preise, Verfügbarkeit und Bedingungen liegen immer beim jeweiligen Anbieter.
+      </div>
+    </div>
+  </section>
+</BaseLayout>

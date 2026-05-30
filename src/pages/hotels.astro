@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Faq from '../components/Faq.astro';
+import { categories } from '../data/categories.js';
+import { categoryFaq } from '../data/faqs.js';
+
+const page = categories.find((item) => item.id === 'hotels');
+const checklist = [
+  { title: 'Lage', text: 'Prüfe, wie nah das Hotel an Strand, Altstadt, Bahnhof oder Ausflugszielen liegt.' },
+  { title: 'Bewertungen', text: 'Achte nicht nur auf die Note, sondern auch auf aktuelle Kommentare zu Sauberkeit, Frühstück und Lärm.' },
+  { title: 'Annullierung', text: 'Flexible Stornierung ist besonders sinnvoll, wenn Flugzeiten oder Reisedaten noch unsicher sind.' },
+  { title: 'Transfer', text: 'Rechne die Fahrt vom Flughafen mit ein. Ein günstiges Hotel kann durch lange Transfers unpraktisch werden.' }
+];
+const faq = categoryFaq.hotels;
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer }
+  }))
+};
+---
+<BaseLayout
+  title="Hotels auswählen"
+  description="Ein kurzer Guide, wie du ein gutes Hotel für deine Reise findest: Lage, Bewertungen, Stornierung und Transfer."
+  path="/hotels/"
+  image={page.image}
+  schema={[faqSchema]}
+>
+  <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: page.title, href: '/hotels/' }]} />
+
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div class="content">
+        <p class="eyebrow">Hotel-Guide</p>
+        <h1>So findest du ein gutes Hotel</h1>
+        <p class="lead">Bei Hotels zählt nicht nur der Preis. Lage, Bewertungen, Stornierung und Transfer entscheiden oft, ob die Reise entspannt wird.</p>
+        <span class="button muted-button" data-affiliate-url={page.affiliateUrl}>Hotel-Empfehlungen folgen in Kürze</span>
+      </div>
+      <img src={page.image} alt={page.alt} width="900" height="620" />
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Checkliste</p>
+        <h2>Worauf du vor der Buchung achten solltest</h2>
+      </div>
+      <div class="grid four">
+        {checklist.map((item) => (
+          <article class="benefit">
+            <strong>{item.title}</strong>
+            <p>{item.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-panel neutral">
+        <div>
+          <p class="eyebrow">In Vorbereitung</p>
+          <h2>Hotel-Empfehlungen folgen in Kürze</h2>
+          <p class="lead">Für Hotels ist aktuell noch kein aktiver Affiliate-Partner eingebunden. Sobald Empfehlungen bereit sind, wird diese Seite erweitert.</p>
+        </div>
+        <span class="button muted-button" data-affiliate-url={page.affiliateUrl}>Vergleich folgt bald</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Häufige Fragen</h2>
+      </div>
+      <Faq items={faq} />
+    </div>
+  </section>
+</BaseLayout>

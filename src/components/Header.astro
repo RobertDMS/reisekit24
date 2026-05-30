@@ -1,0 +1,33 @@
+---
+import { site } from '../data/site.js';
+---
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" href="/" aria-label="reisekit24 Startseite">
+      <img src={site.logo} alt="reisekit24 Logo" width="150" height="34" />
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+      <span aria-hidden="true"></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Hauptnavigation" data-open="false">
+      <ul class="nav-list">
+        {site.nav.map((item) => (
+          <li><a href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+      <a class="button nav-cta" href="/ausfluege/">Deals entdecken</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const button = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('#site-nav');
+
+  button?.addEventListener('click', () => {
+    const isOpen = nav?.getAttribute('data-open') === 'true';
+    nav?.setAttribute('data-open', String(!isOpen));
+    button.setAttribute('aria-expanded', String(!isOpen));
+    document.body.classList.toggle('menu-open', !isOpen);
+  });
+</script>

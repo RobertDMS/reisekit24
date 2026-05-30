@@ -1,0 +1,13 @@
+DirectoryIndex dist/index.html index.html
+
+RewriteEngine On
+
+# Hide source and configuration files when the repository is deployed to public_html.
+RewriteRule ^(src|node_modules|\.astro|\.github)(/|$) - [F,L]
+RewriteRule ^(package(-lock)?\.json|astro\.config\.mjs|tsconfig\.json|README\.md)$ - [F,L]
+
+# Serve the generated Astro static site from /dist.
+RewriteCond %{REQUEST_URI} !^/dist/
+RewriteCond %{DOCUMENT_ROOT}/dist%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}/dist%{REQUEST_URI} -d
+RewriteRule ^(.*)$ dist/$1 [L]

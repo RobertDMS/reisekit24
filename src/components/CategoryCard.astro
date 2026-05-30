@@ -1,0 +1,12 @@
+---
+const { category } = Astro.props;
+---
+<a class="card category-card" href={category.href}>
+  <img class="image-cover" src={category.image} alt={category.alt} width="600" height="420" loading="lazy" />
+  <div class="card-body">
+    <span class="category-badge">{category.shortTitle}</span>
+    <h3>{category.title}</h3>
+    <p>{category.description}</p>
+    <span class="round-link" aria-hidden="true">→</span>
+  </div>
+</a>

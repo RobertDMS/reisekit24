@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+<BaseLayout title="Datenschutz" description="Datenschutzhinweise von reisekit24." path="/datenschutz/">
+  <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Datenschutz', href: '/datenschutz/' }]} />
+  <section class="page-hero">
+    <div class="container content">
+      <h1>Datenschutz</h1>
+      <p class="lead">Hier werden die Datenschutzhinweise für reisekit24 ergänzt.</p>
+      <p>Vor Veröffentlichung sollten Tracking, Affiliate-Links, Hosting, Kontaktaufnahme und mögliche eingebundene Widgets vollständig beschrieben werden.</p>
+      <p>Dieser Text ist ein Platzhalter und ersetzt keine rechtliche Beratung.</p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import Faq from '../components/Faq.astro';
+import { categories, destinations } from '../data/categories.js';
+import { posts } from '../data/blog.js';
+import { homeFaq } from '../data/faqs.js';
+import { images } from '../data/images.js';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer }
+  }))
+};
+
+const destinationCopy = {
+  Mallorca: 'Strand, Buchten und entspannte Ausflüge.',
+  Griechenland: 'Inseln, Kultur und sonnige Hoteldeals.',
+  Türkei: 'Meer, Basare und beliebte Pauschalreisen.',
+  Spanien: 'Städte, Küsten und viele Erlebnisse.'
+};
+
+const homeGuides = [
+  {
+    ...posts[0],
+    title: 'Die besten Hidden Gems auf Mallorca',
+    tag: 'Ausflüge',
+    readTime: '4 Min. Lesezeit'
+  },
+  {
+    ...posts[1],
+    title: 'eSIM im Ausland: So bleibst du online',
+    tag: 'eSIM',
+    readTime: '3 Min. Lesezeit'
+  },
+  {
+    ...posts[2],
+    title: 'Packliste für deinen Sommerurlaub',
+    tag: 'Travel Kit',
+    readTime: '5 Min. Lesezeit'
+  }
+];
+---
+<BaseLayout
+  title="Dein Travel Kit für die nächste Reise"
+  description="Die besten Ausflüge, Hotels, eSIMs und Pauschalreisen an einem Ort. Einfach finden und direkt beim Partner buchen."
+  path="/"
+  schema={[faqSchema]}
+>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="pill-label">Dein Abenteuer beginnt hier</p>
+        <h1>Dein Travel Kit für die <span>nächste Reise</span></h1>
+        <p class="lead">Die besten Ausflüge, Hotels, eSIMs und Pauschalreisen - alles an einem Ort. Einfach finden. Mehr erleben.</p>
+        <div class="hero-actions">
+          <a class="button" href="/ausfluege/">Top Deals entdecken</a>
+          <a class="button secondary" href="/blog/">Inspiration finden</a>
+        </div>
+      </div>
+      <div class="hero-collage" aria-label="Reise-Inspiration">
+        <div class="hero-dots" aria-hidden="true"></div>
+        <!-- Hero image path is managed in src/data/images.js. -->
+        <img class="hero-main-img" src={images.hero.main} alt="Heller Strand mit türkisblauem Wasser" width="760" height="620" />
+        <div class="hero-mini-card mini-top">
+          <img src={images.destinations.griechenland} alt="Griechische Insel mit weißen Häusern" width="180" height="140" loading="lazy" />
+          <span>Island mood</span>
+        </div>
+        <div class="hero-mini-card mini-bottom">
+          <img src={images.categories.esim} alt="Smartphone für mobile Reiseplanung" width="180" height="140" loading="lazy" />
+          <span>Online bleiben</span>
+        </div>
+        <div class="hero-badge">Good vibes</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home-categories">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Reisekit</p>
+        <h2>Alles, was du vor der Reise brauchst</h2>
+        <p class="lead">Schnell zu den wichtigsten Reisebausteinen. Ohne langes Suchen.</p>
+      </div>
+      <div class="grid four">
+        {categories.map((category) => <CategoryCard category={category} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Beliebt</p>
+        <h2>Beliebte Reiseziele</h2>
+      </div>
+      <div class="destination-grid">
+        {destinations.map((item) => (
+          <a class="destination-card" href={item.href}>
+            <img src={item.image} alt={item.alt} width="600" height="420" loading="lazy" />
+            <span class="destination-content">
+              <strong>{item.name}</strong>
+              <small>{destinationCopy[item.name]}</small>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Warum reisekit24?</p>
+        <h2>Einfacher planen, schneller entscheiden</h2>
+      </div>
+      <div class="grid four">
+        <div class="benefit"><strong>Schnell</strong><p>Kurze Wege zu passenden Angeboten und Partnern.</p></div>
+        <div class="benefit"><strong>Übersichtlich</strong><p>Klare Kategorien statt überladener Reiseportale.</p></div>
+        <div class="benefit"><strong>Praktisch</strong><p>Reisebausteine, die normale Urlauber wirklich brauchen.</p></div>
+        <div class="benefit"><strong>Direkt buchbar</strong><p>Die Buchung erfolgt direkt beim jeweiligen Partner.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Travel Tipps & Guides</p>
+        <h2>Kurz lesen, besser reisen</h2>
+      </div>
+      <div class="grid three">
+        {homeGuides.map((post) => (
+          <a class="card blog-card" href={`/blog/${post.slug}/`}>
+            <img class="image-cover" src={post.image} alt={post.alt} width="600" height="420" loading="lazy" />
+            <div class="card-body">
+              <span class="tag">{post.tag}</span>
+              <h3>{post.title}</h3>
+              <p>{post.readTime}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Häufige Fragen</h2>
+      </div>
+      <Faq items={homeFaq} />
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="notice">
+        reisekit24 ist ein unabhängiges Vergleichs- und Reiseportal. Wenn du über unsere Links buchst, erhalten wir möglicherweise eine Provision. Für dich entstehen keine zusätzlichen Kosten.
+      </div>
+    </div>
+  </section>
+</BaseLayout>

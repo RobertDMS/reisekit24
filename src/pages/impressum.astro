@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+<BaseLayout title="Impressum" description="Impressum von reisekit24." path="/impressum/">
+  <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Impressum', href: '/impressum/' }]} />
+  <section class="page-hero">
+    <div class="container content">
+      <h1>Impressum</h1>
+      <p class="lead">Bitte ergänze hier vor Veröffentlichung die vollständigen Pflichtangaben.</p>
+      <p><strong>Betreiber:</strong> reisekit24</p>
+      <p><strong>E-Mail:</strong> kontakt@reisekit24.de</p>
+      <p><strong>Hinweis:</strong> Diese Seite ist ein Platzhalter und ersetzt keine rechtliche Prüfung.</p>
+    </div>
+  </section>
+</BaseLayout>

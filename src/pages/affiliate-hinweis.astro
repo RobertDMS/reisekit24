@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+<BaseLayout title="Affiliate-Hinweis" description="Hinweis zu Affiliate-Links auf reisekit24." path="/affiliate-hinweis/">
+  <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Affiliate-Hinweis', href: '/affiliate-hinweis/' }]} />
+  <section class="page-hero">
+    <div class="container content">
+      <p class="eyebrow">Transparenz</p>
+      <h1>Affiliate-Hinweis</h1>
+      <p class="lead">Einige Links auf reisekit24 sind Affiliate-Links. Wenn du über einen solchen Link buchst, kann reisekit24 eine Provision erhalten.</p>
+      <p>Für dich entstehen dadurch keine zusätzlichen Kosten. Die Buchung, Preise, Verfügbarkeit und Vertragsbedingungen liegen beim jeweiligen Partner.</p>
+    </div>
+  </section>
+</BaseLayout>

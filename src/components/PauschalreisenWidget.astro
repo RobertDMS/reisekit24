@@ -1,0 +1,14 @@
+---
+import WidgetPlaceholder from './WidgetPlaceholder.astro';
+import { categories } from '../data/categories.js';
+const category = categories.find((item) => item.id === 'pauschalreisen');
+---
+<WidgetPlaceholder
+  title="Pauschalreise-Angebote werden vorbereitet"
+  partner="Pauschalreise-Guide"
+  description="Für Pauschalreisen ist aktuell noch kein aktiver Affiliate-Partner eingebunden. Angebote und Anbieterübersicht folgen später."
+  image={category.image}
+  alt={category.alt}
+  href={category.affiliateUrl}
+  cta="Pauschalreise-Angebote folgen in Kürze"
+/>
