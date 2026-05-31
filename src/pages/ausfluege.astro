@@ -2,16 +2,16 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Faq from '../components/Faq.astro';
+import SeoContentBlock from '../components/SeoContentBlock.astro';
 import { categories } from '../data/categories.js';
-import { categoryFaq } from '../data/faqs.js';
+import { excursionsFaq } from '../data/faqs.js';
 import { getYourGuideDestinations } from '../data/affiliateLinks.js';
+import { seoBlocks } from '../data/seoBlocks.js';
 
 const page = categories.find((item) => item.id === 'ausfluege');
+const seoBlock = seoBlocks.ausfluege;
 const featuredDestination = getYourGuideDestinations.find((item) => item.destinationSlug === 'mallorca');
-const faq = [
-  ...categoryFaq.ausfluege,
-  { question: 'Ist GetYourGuide der aktive Partner?', answer: 'Ja. Für Ausflüge, Tickets und Aktivitäten ist GetYourGuide aktuell der aktive Partner von reisekit24.' }
-];
+const faq = excursionsFaq;
 const attractionTypes = [
   { title: 'Tickets & Sehenswürdigkeiten', text: 'Eintrittskarten für Museen, Aussichtspunkte, historische Orte und beliebte Highlights.' },
   { title: 'Geführte Touren', text: 'Stadtrundgänge, Food-Touren und lokale Erlebnisse mit Guide.' },
@@ -33,7 +33,7 @@ const faqSchema = {
   mainEntity: faq.map((item) => ({
     '@type': 'Question',
     name: item.question,
-    acceptedAnswer: { '@type': 'Answer', text: item.answer }
+    acceptedAnswer: { '@type': 'Answer', text: item.answerText ?? item.answer }
   }))
 };
 ---
@@ -126,9 +126,26 @@ const faqSchema = {
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">FAQ</p>
-        <h2>Häufige Fragen</h2>
+        <h2>Häufige Fragen zu Ausflügen und Aktivitäten im Urlaub</h2>
+        <p class="lead">Praktische Antworten auf wichtige Fragen zu Buchung, Planung und Auswahl von Ausflügen im Urlaub.</p>
       </div>
       <Faq items={faq} />
     </div>
   </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="home-cta-links">
+        <h2>Weiter zu beliebten Ausflugsarten</h2>
+        <div>
+          <a href="/ausfluege/">Bootstouren entdecken</a>
+          <a href="/ausfluege/">Stadtführungen ansehen</a>
+          <a href="/ausfluege/">Naturerlebnisse finden</a>
+          <a href="/ausfluege/">Beliebte Tickets vergleichen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <SeoContentBlock block={seoBlock} />
 </BaseLayout>

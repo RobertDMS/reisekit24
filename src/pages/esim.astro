@@ -2,24 +2,27 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Faq from '../components/Faq.astro';
+import SeoContentBlock from '../components/SeoContentBlock.astro';
 import { categories } from '../data/categories.js';
-import { categoryFaq } from '../data/faqs.js';
+import { esimFaq } from '../data/faqs.js';
+import { seoBlocks } from '../data/seoBlocks.js';
 
 const page = categories.find((item) => item.id === 'esim');
+const seoBlock = seoBlocks.esim;
 const blocks = [
   { title: 'Was ist eine eSIM?', text: 'Eine eSIM ist eine digitale SIM-Karte. Du aktivierst sie auf dem Smartphone und brauchst keine physische Karte zu wechseln.' },
   { title: 'Wann lohnt sie sich?', text: 'Sie lohnt sich besonders, wenn du unterwegs Navigation, Messenger, Tickets und Reise-Apps nutzen möchtest.' },
   { title: 'eSIM vs. Roaming', text: 'Roaming ist bequem, kann außerhalb der EU aber teuer sein. Eine eSIM kann planbarer sein, wenn Datenvolumen und Laufzeit klar sind.' },
   { title: 'Für wen macht sie Sinn?', text: 'Für Städtereisen, Rundreisen, Remote Work, Solo-Trips und alle, die direkt nach der Ankunft online sein möchten.' }
 ];
-const faq = categoryFaq.esim;
+const faq = esimFaq;
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: faq.map((item) => ({
     '@type': 'Question',
     name: item.question,
-    acceptedAnswer: { '@type': 'Answer', text: item.answer }
+    acceptedAnswer: { '@type': 'Answer', text: item.answerText ?? item.answer }
   }))
 };
 ---
@@ -32,7 +35,7 @@ const faqSchema = {
 >
   <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: page.title, href: '/esim/' }]} />
 
-  <section class="page-hero">
+  <section class="page-hero" id="angebote">
     <div class="container page-hero-grid">
       <div class="content">
         <p class="eyebrow">eSIM-Guide</p>
@@ -44,7 +47,7 @@ const faqSchema = {
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="voraussetzungen">
     <div class="container grid two">
       {blocks.map((item) => (
         <article class="benefit">
@@ -55,7 +58,7 @@ const faqSchema = {
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="vergleich">
     <div class="container">
       <div class="cta-panel neutral">
         <div>
@@ -72,9 +75,12 @@ const faqSchema = {
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">FAQ</p>
-        <h2>Häufige Fragen</h2>
+        <h2>Häufige Fragen zu eSIM im Urlaub</h2>
+        <p class="lead">Praktische Antworten auf wichtige Fragen zu eSIM, mobilem Internet und Nutzung im Urlaub.</p>
       </div>
       <Faq items={faq} />
     </div>
   </section>
+
+  <SeoContentBlock block={seoBlock} />
 </BaseLayout>

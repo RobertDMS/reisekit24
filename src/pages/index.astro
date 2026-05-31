@@ -2,10 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import Faq from '../components/Faq.astro';
+import SeoContentBlock from '../components/SeoContentBlock.astro';
 import { categories, destinations } from '../data/categories.js';
 import { posts } from '../data/blog.js';
 import { homeFaq } from '../data/faqs.js';
 import { images } from '../data/images.js';
+import { seoBlocks } from '../data/seoBlocks.js';
+
+const homeSeoBlock = seoBlocks.home;
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -153,11 +157,27 @@ const homeGuides = [
       <div class="section-head">
         <p class="eyebrow">FAQ</p>
         <h2>Häufige Fragen rund um Urlaub, Buchung und Reiseplanung</h2>
-        <p class="lead">Kurze Antworten auf typische Fragen vor dem Urlaub - von Hotelbuchung über Ausflüge bis zur eSIM.</p>
+        <p class="lead">Praktische Antworten auf wichtige Fragen zu Urlaub, Buchung, Ausflügen und eSIM.</p>
       </div>
       <Faq items={homeFaq} initialVisible={6} showMoreLabel="Mehr Fragen anzeigen" />
     </div>
   </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="home-cta-links">
+        <h2>Weiter zur passenden Kategorie</h2>
+        <div>
+          <a href="/ausfluege/">Ausflüge & Aktivitäten entdecken</a>
+          <a href="/hotels/">Hotels finden</a>
+          <a href="/esim/">eSIM ansehen</a>
+          <a href="/pauschalreisen/">Pauschalreisen entdecken</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <SeoContentBlock block={homeSeoBlock} />
 
   <section class="section-tight">
     <div class="container">

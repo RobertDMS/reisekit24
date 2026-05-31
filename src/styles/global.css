@@ -716,6 +716,75 @@ p {
   margin-top: 14px;
 }
 
+.home-cta-links {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--white);
+  box-shadow: var(--soft-shadow);
+}
+
+.home-cta-links h2 {
+  font-size: clamp(1.25rem, 4vw, 1.65rem);
+}
+
+.home-cta-links div {
+  display: grid;
+  gap: 10px;
+}
+
+.home-cta-links a {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.home-cta-links a:hover {
+  border-color: rgba(255, 107, 26, 0.35);
+  background: var(--orange-soft);
+}
+
+.seo-content-block {
+  display: grid;
+  gap: 18px;
+}
+
+.seo-content-list {
+  display: grid;
+  gap: 14px;
+  max-width: 900px;
+}
+
+.seo-content-list article {
+  padding: 0 0 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.seo-content-list article:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.seo-content-list h3 {
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.seo-content-list p {
+  color: var(--muted);
+}
+
+.seo-content-cta {
+  margin-top: 4px;
+}
+
 .notice {
   padding: 18px 20px;
   border: 1px solid rgba(255, 107, 26, 0.2);
@@ -892,6 +961,15 @@ p {
 
   .faq-show-more {
     width: auto;
+  }
+
+  .home-cta-links {
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+  }
+
+  .home-cta-links div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .footer-columns {

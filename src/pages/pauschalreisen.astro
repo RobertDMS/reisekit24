@@ -1,25 +1,28 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Faq from '../components/Faq.astro';
+import SeoContentBlock from '../components/SeoContentBlock.astro';
 import { categories } from '../data/categories.js';
-import { categoryFaq } from '../data/faqs.js';
+import { pauschalreisenFaq } from '../data/faqs.js';
+import { seoBlocks } from '../data/seoBlocks.js';
 
 const page = categories.find((item) => item.id === 'pauschalreisen');
+const seoBlock = seoBlocks.pauschalreisen;
 const travelTypes = [
   { title: 'Familien', text: 'Pauschalreisen sind praktisch, wenn Flug, Hotel und oft auch Transfer zusammen geplant werden sollen.' },
   { title: 'Paare', text: 'Für Badeurlaub, kurze Auszeiten und entspannte Hotelwochen ist ein Paket oft angenehm übersichtlich.' },
   { title: 'Komfortsuchende', text: 'Wer wenig selbst organisieren möchte, profitiert von klaren Leistungen und einem festen Reiseplan.' },
   { title: 'Preisvergleicher', text: 'Ein Paket kann attraktiv sein, sollte aber immer mit Einzelbuchungen verglichen werden.' }
 ];
-const faq = categoryFaq.pauschalreisen;
+const faq = pauschalreisenFaq;
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: faq.map((item) => ({
     '@type': 'Question',
     name: item.question,
-    acceptedAnswer: { '@type': 'Answer', text: item.answer }
+    acceptedAnswer: { '@type': 'Answer', text: item.answerText ?? item.answer }
   }))
 };
 ---
@@ -32,7 +35,7 @@ const faqSchema = {
 >
   <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: page.title, href: '/pauschalreisen/' }]} />
 
-  <section class="page-hero">
+  <section class="page-hero" id="angebote">
     <div class="container page-hero-grid">
       <div class="content">
         <p class="eyebrow">Pauschalreise-Guide</p>
@@ -44,7 +47,7 @@ const faqSchema = {
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="all-inclusive">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Für wen?</p>
@@ -61,7 +64,7 @@ const faqSchema = {
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="vergleich">
     <div class="container">
       <div class="cta-panel neutral">
         <div>
@@ -78,9 +81,13 @@ const faqSchema = {
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">FAQ</p>
-        <h2>Häufige Fragen</h2>
+        <h2>Häufige Fragen zu Pauschalreisen und Urlaubspaketen</h2>
+        <p class="lead">Praktische Antworten auf wichtige Fragen zu Buchung, Preis, Leistungen und Auswahl von Pauschalreisen.</p>
       </div>
       <Faq items={faq} />
     </div>
   </section>
+
+  <SeoContentBlock block={seoBlock} />
 </BaseLayout>
+
