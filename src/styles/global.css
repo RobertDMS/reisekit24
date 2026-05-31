@@ -700,6 +700,22 @@ p {
   color: var(--muted);
 }
 
+.faq-item a {
+  color: var(--navy);
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.faq-extra-hidden {
+  display: none;
+}
+
+.faq-show-more {
+  width: 100%;
+  margin-top: 14px;
+}
+
 .notice {
   padding: 18px 20px;
   border: 1px solid rgba(255, 107, 26, 0.2);
@@ -872,6 +888,10 @@ p {
 
   .benefit-strip {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .faq-show-more {
+    width: auto;
   }
 
   .footer-columns {

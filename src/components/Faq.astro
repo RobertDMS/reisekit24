@@ -1,11 +1,27 @@
 ---
-const { items = [] } = Astro.props;
+const { items = [], initialVisible = items.length, showMoreLabel = 'Mehr Fragen anzeigen' } = Astro.props;
+const hasHiddenItems = items.length > initialVisible;
 ---
-<div class="faq-list">
-  {items.map((item) => (
-    <details class="faq-item">
+<div class="faq-list" data-faq-list>
+  {items.map((item, index) => (
+    <details class:list={['faq-item', index >= initialVisible && 'faq-extra-hidden']}>
       <summary>{item.question}</summary>
-      <p>{item.answer}</p>
+      {item.answerHtml ? <p set:html={item.answerHtml} /> : <p>{item.answer}</p>}
     </details>
   ))}
 </div>
+{hasHiddenItems && (
+  <button class="button secondary faq-show-more" type="button" data-faq-show-more>{showMoreLabel}</button>
+)}
+
+<script>
+  document.querySelectorAll('[data-faq-show-more]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const list = button.previousElementSibling;
+      list?.querySelectorAll('.faq-extra-hidden').forEach((item) => {
+        item.classList.remove('faq-extra-hidden');
+      });
+      button.remove();
+    });
+  });
+</script>

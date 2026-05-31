@@ -13,7 +13,7 @@ const faqSchema = {
   mainEntity: homeFaq.map((item) => ({
     '@type': 'Question',
     name: item.question,
-    acceptedAnswer: { '@type': 'Answer', text: item.answer }
+    acceptedAnswer: { '@type': 'Answer', text: item.answerText ?? item.answer }
   }))
 };
 
@@ -152,9 +152,10 @@ const homeGuides = [
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">FAQ</p>
-        <h2>Häufige Fragen</h2>
+        <h2>Häufige Fragen rund um Urlaub, Buchung und Reiseplanung</h2>
+        <p class="lead">Kurze Antworten auf typische Fragen vor dem Urlaub - von Hotelbuchung über Ausflüge bis zur eSIM.</p>
       </div>
-      <Faq items={homeFaq} />
+      <Faq items={homeFaq} initialVisible={6} showMoreLabel="Mehr Fragen anzeigen" />
     </div>
   </section>
 
