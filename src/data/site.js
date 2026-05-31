@@ -3,7 +3,7 @@ export const site = {
   url: 'https://reisekit24.de',
   language: 'de',
   // Set to false when the public website should be visible again.
-  underConstruction: true,
+  underConstruction: false,
   description:
     'reisekit24 hilft Reisenden, Ausflüge, Hotels, eSIM und Pauschalreisen schnell zu finden und direkt beim Partner zu buchen.',
   logo: '/logo-reisekit24.png',

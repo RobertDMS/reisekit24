@@ -2,12 +2,13 @@
 // Replace only the `url` value when a real partner link is ready.
 // Keep the keys unchanged because pages and widgets read these names.
 
+const getYourGuideMainUrl = 'https://www.getyourguide.com/pl-pl/?partner_id=A65YU5Z&cmp=CL&visitor-id=S3YV8F2KJ34TP7ISL8LFOSR1MUGSEF64';
+
 export const affiliateLinks = {
   getyourguide: {
     label: 'GetYourGuide',
-    // Default featured GetYourGuide link used for general excursion CTA buttons.
-    // Replace only if you want another default destination.
-    url: 'https://gyg.me/W8SDvdZk'
+    // Main GetYourGuide affiliate URL. Destination-specific links can be added later.
+    url: getYourGuideMainUrl
   },
   booking: {
     label: 'Booking.com',
@@ -27,7 +28,7 @@ export const affiliateLinks = {
 };
 
 // GetYourGuide destination affiliate links.
-// Add or edit destination links here, then render them from pages/components.
+// Each destination can use its own GetYourGuide affiliate URL.
 // Required link attributes in templates: target="_blank" and rel="sponsored noopener noreferrer".
 export const getYourGuideDestinations = [
   {

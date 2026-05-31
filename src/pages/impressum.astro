@@ -2,15 +2,34 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 ---
-<BaseLayout title="Impressum" description="Impressum von reisekit24." path="/impressum/">
+<BaseLayout
+  title="Impressum"
+  description="Impressum und Anbieterkennzeichnung von reisekit24."
+  path="/impressum/"
+>
   <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Impressum', href: '/impressum/' }]} />
   <section class="page-hero">
-    <div class="container content">
+    <div class="container legal-content">
       <h1>Impressum</h1>
-      <p class="lead">Bitte ergänze hier vor Veröffentlichung die vollständigen Pflichtangaben.</p>
-      <p><strong>Betreiber:</strong> reisekit24</p>
-      <p><strong>E-Mail:</strong> kontakt@reisekit24.de</p>
-      <p><strong>Hinweis:</strong> Diese Seite ist ein Platzhalter und ersetzt keine rechtliche Prüfung.</p>
+
+      <h2>Angaben gemäß § 5 TMG:</h2>
+      <p>Robert Fraszczak Digital Growth Agency<br />Abendstr. 24<br />17321 Löcknitz<br />Deutschland</p>
+
+      <p>E-Mail: <a href="mailto:kontakt@reisekit24.de">kontakt@reisekit24.de</a></p>
+
+      <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />DE428383418</p>
+
+      <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
+      <p>Robert Fraszczak<br />Abendstr. 24<br />17321 Löcknitz</p>
+
+      <h2>Haftung für Inhalte:</h2>
+      <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+
+      <h2>Haftung für Links:</h2>
+      <p>Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.</p>
+
+      <h2>Urheberrecht:</h2>
+      <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.</p>
     </div>
   </section>
 </BaseLayout>
