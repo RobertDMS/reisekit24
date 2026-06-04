@@ -40,12 +40,12 @@ export const categories = [
     partner: 'eSIM-Guide',
     affiliateUrl: affiliateLinks.airalo.url,
     description: 'Mobile Daten im Ausland verstehen und besser planen.',
-    lead: 'Mit einer eSIM kannst du mobile Daten für viele Länder schon vor der Reise vorbereiten. Ein aktiver eSIM-Partner wird später ergänzt.',
+    lead: 'Mit einer eSIM kannst du mobile Daten für viele Länder schon vor der Reise vorbereiten. Airalo bietet dafür digitale Datenpakete für beliebte Reiseziele.',
     // Image path is managed in src/data/images.js.
     image: images.categories.esim,
     alt: 'Smartphone mit Reiseplanung auf einem Tisch',
     bullets: ['Digitale SIM-Karte verstehen', 'Roaming und eSIM vergleichen', 'Datenbedarf vor der Reise planen'],
-    offers: ['eSIM-Vergleich wird vorbereitet', 'Anbieterübersicht folgt bald', 'Empfehlungen folgen in Kürze']
+    offers: ['Airalo eSIM-Angebote', 'Beliebte Reiseziele', 'Datenpakete für den Urlaub']
   },
   {
     id: 'pauschalreisen',

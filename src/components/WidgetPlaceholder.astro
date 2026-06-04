@@ -8,7 +8,7 @@ const { title, partner, description, image, alt, href, cta = 'Zum Partner' } = A
     <h2>{title}</h2>
     <p class="lead">{description}</p>
     {href ? (
-      <a class="button" href={href} target="_blank" rel="sponsored noopener noreferrer"> {cta} </a>
+      <a class="button" href={href} target="_blank" rel="sponsored nofollow noopener"> {cta} </a>
     ) : (
       <span class="button muted-button">{cta}</span>
     )}

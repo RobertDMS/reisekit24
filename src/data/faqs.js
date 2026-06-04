@@ -446,7 +446,7 @@ export const categoryFaq = {
   ],
   esim: [
     { question: 'Was ist eine eSIM?', answer: 'Eine eSIM ist eine digitale SIM, mit der du mobile Daten nutzen kannst, ohne eine physische SIM-Karte zu wechseln.' },
-    { question: 'Ist schon ein eSIM-Partner verbunden?', answer: 'Noch nicht. Ein eSIM-Vergleich wird vorbereitet.' },
+    { question: 'Ist schon ein eSIM-Partner verbunden?', answer: 'Ja. Airalo ist als erster eSIM-Partner eingebunden.' },
     { question: 'Worauf sollte ich achten?', answer: 'Prüfe Datenvolumen, Laufzeit, Zielland und ob dein Smartphone eSIM unterstützt.' }
   ],
   pauschalreisen: [

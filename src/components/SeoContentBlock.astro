@@ -1,5 +1,6 @@
 ---
-const { block } = Astro.props;
+const { block, ctaOverride } = Astro.props;
+const cta = ctaOverride ?? block?.cta;
 ---
 {block && (
   <section class="section-tight">
@@ -19,12 +20,18 @@ const { block } = Astro.props;
         ))}
       </div>
 
-      {block.cta && (
+      {cta && (
         <div class="home-cta-links seo-content-cta">
-          <h2>{block.cta.title}</h2>
+          <h2>{cta.title}</h2>
           <div>
-            {block.cta.links.map((link) => (
-              <a href={link.href}>{link.label}</a>
+            {cta.links.map((link) => (
+              <a
+                href={link.href}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'sponsored nofollow noopener' : undefined}
+              >
+                {link.label}
+              </a>
             ))}
           </div>
         </div>

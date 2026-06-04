@@ -1,14 +1,15 @@
 ---
 import WidgetPlaceholder from './WidgetPlaceholder.astro';
 import { categories } from '../data/categories.js';
+import { airaloLinks } from '../data/airaloLinks.ts';
 const category = categories.find((item) => item.id === 'esim');
 ---
 <WidgetPlaceholder
-  title="eSIM für deine Reise vorbereiten"
-  partner="eSIM-Guide"
-  description="Für eSIM ist aktuell noch kein aktiver Affiliate-Partner eingebunden. Der Vergleich wird vorbereitet."
+  title="eSIM für deine Reise finden"
+  partner="Airalo"
+  description="Airalo bietet digitale eSIM-Datenpakete für viele Reiseziele. So kannst du mobiles Internet vor dem Urlaub einfacher vorbereiten."
   image={category.image}
   alt={category.alt}
-  href={category.affiliateUrl}
-  cta="eSIM-Vergleich wird vorbereitet"
+  href={airaloLinks.main}
+  cta="eSIM-Angebote ansehen"
 />

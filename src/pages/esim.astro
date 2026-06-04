@@ -3,12 +3,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Faq from '../components/Faq.astro';
 import SeoContentBlock from '../components/SeoContentBlock.astro';
+import { airaloLinks } from '../data/airaloLinks.ts';
 import { categories } from '../data/categories.js';
 import { esimFaq } from '../data/faqs.js';
 import { seoBlocks } from '../data/seoBlocks.js';
 
 const page = categories.find((item) => item.id === 'esim');
 const seoBlock = seoBlocks.esim;
+const affiliateLinkAttributes = {
+  target: '_blank',
+  rel: 'sponsored nofollow noopener'
+};
+const featuredCountries = airaloLinks.countries.filter((country) => country.featured);
+const moreCountries = airaloLinks.countries.filter((country) => !country.featured);
+const esimSeoCta = {
+  ...seoBlock.cta,
+  links: [
+    { label: 'eSIM-Angebote ansehen', href: airaloLinks.main, external: true },
+    { label: 'Datenpakete vergleichen', href: '#beliebte-reiseziele' },
+    { label: 'Kompatibilität prüfen', href: airaloLinks.howItWorks, external: true },
+    { label: 'Ausflüge & Aktivitäten planen', href: '/ausfluege/' }
+  ]
+};
 const blocks = [
   { title: 'Was ist eine eSIM?', text: 'Eine eSIM ist eine digitale SIM-Karte. Du aktivierst sie auf dem Smartphone und brauchst keine physische Karte zu wechseln.' },
   { title: 'Wann lohnt sie sich?', text: 'Sie lohnt sich besonders, wenn du unterwegs Navigation, Messenger, Tickets und Reise-Apps nutzen möchtest.' },
@@ -27,8 +43,8 @@ const faqSchema = {
 };
 ---
 <BaseLayout
-  title="eSIM für Reisen"
-  description="Was eine eSIM ist, wann sie sich lohnt und wie sie sich von Roaming unterscheidet."
+  title="eSIM für den Urlaub"
+  description="eSIM für Reisen: schnell online im Urlaub, Airalo-Datenpakete ansehen und beliebte Reiseziele vergleichen."
   path="/esim/"
   image={page.image}
   schema={[faqSchema]}
@@ -39,9 +55,12 @@ const faqSchema = {
     <div class="container page-hero-grid">
       <div class="content">
         <p class="eyebrow">eSIM-Guide</p>
-        <h1>Mit eSIM unterwegs online bleiben</h1>
-        <p class="lead">Eine eSIM kann Reisen einfacher machen, wenn du mobile Daten vorab planen möchtest. Der Vergleich auf reisekit24 wird vorbereitet.</p>
-        <span class="button muted-button" data-affiliate-url={page.affiliateUrl}>eSIM-Vergleich wird vorbereitet</span>
+        <h1>eSIM für den Urlaub: schnell online auf Reisen</h1>
+        <p class="lead">Mit einer eSIM bist du im Urlaub oft schon kurz nach der Ankunft online - ohne lokale SIM-Karte und ohne lange Suche vor Ort.</p>
+        <div class="hero-actions">
+          <a class="button" href={airaloLinks.main} {...affiliateLinkAttributes}>eSIM-Angebote ansehen</a>
+          <a class="button secondary" href={airaloLinks.howItWorks} {...affiliateLinkAttributes}>Wie funktioniert Airalo?</a>
+        </div>
       </div>
       <img src={page.image} alt={page.alt} width="900" height="620" />
     </div>
@@ -58,15 +77,72 @@ const faqSchema = {
     </div>
   </section>
 
-  <section class="section-tight" id="vergleich">
+  <section class="section-tight" id="airalo">
     <div class="container">
-      <div class="cta-panel neutral">
+      <div class="cta-panel neutral esim-airalo-panel">
         <div>
-          <p class="eyebrow">In Vorbereitung</p>
-          <h2>eSIM-Vergleich wird vorbereitet</h2>
-          <p class="lead">Aktuell gibt es noch keinen aktiven eSIM-Partner. Bis dahin bleibt diese Seite ein kompakter Ratgeber.</p>
+          <p class="eyebrow">Airalo</p>
+          <h2>Wie funktioniert Airalo?</h2>
+          <p class="lead">Airalo bietet digitale eSIM-Datenpakete für viele Reiseziele. Du wählst dein Land, kaufst ein passendes Datenpaket und aktivierst die eSIM auf einem kompatiblen Smartphone. So kannst du im Urlaub mobiles Internet nutzen, ohne eine physische SIM-Karte zu kaufen.</p>
         </div>
-        <span class="button muted-button" data-affiliate-url={page.affiliateUrl}>Anbieterübersicht folgt bald</span>
+        <a class="button secondary" href={airaloLinks.howItWorks} {...affiliateLinkAttributes}>Airalo einfach erklärt ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="beliebte-reiseziele">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Reiseziele</p>
+        <h2>Beliebte eSIM-Reiseziele</h2>
+        <p class="lead">Wähle dein Reiseziel und finde schnell passende eSIM-Angebote für den Urlaub.</p>
+      </div>
+
+      <div class="esim-country-grid">
+        {featuredCountries.map((country) => (
+          <a class="card esim-country-card" href={country.url} {...affiliateLinkAttributes}>
+            <img
+              class="image-cover"
+              src={country.image}
+              alt={`eSIM für ${country.name} im Urlaub`}
+              width="600"
+              height="420"
+              loading="lazy"
+              onerror={`this.onerror=null;this.src='${page.image}';`}
+            />
+            <div class="card-body">
+              <span class="category-badge">{country.region}</span>
+              <h3>{country.name}</h3>
+              <p>{country.description}</p>
+              <span class="button esim-card-button">eSIM ansehen</span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="more-destinations">
+        <div class="section-head">
+          <p class="eyebrow">Mehr Ziele</p>
+          <h2>Weitere eSIM-Ziele</h2>
+        </div>
+        <div class="country-pill-list">
+          {moreCountries.map((country) => (
+            <a class="country-pill" href={country.url} {...affiliateLinkAttributes}>{country.name}</a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-panel">
+        <div>
+          <p class="eyebrow">Kurz entscheiden</p>
+          <h2>Wann ist eine eSIM sinnvoll?</h2>
+          <p class="lead">Eine eSIM ist besonders praktisch, wenn du direkt nach der Ankunft online sein möchtest, keine lokale SIM-Karte kaufen willst und mobiles Internet im Reiseland flexibel nutzen möchtest.</p>
+        </div>
+        <a class="button" href={airaloLinks.main} {...affiliateLinkAttributes}>Passende eSIM finden</a>
       </div>
     </div>
   </section>
@@ -82,5 +158,5 @@ const faqSchema = {
     </div>
   </section>
 
-  <SeoContentBlock block={seoBlock} />
+  <SeoContentBlock block={seoBlock} ctaOverride={esimSeoCta} />
 </BaseLayout>

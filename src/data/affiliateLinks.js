@@ -2,6 +2,8 @@
 // Replace only the `url` value when a real partner link is ready.
 // Keep the keys unchanged because pages and widgets read these names.
 
+import { airaloLinks } from './airaloLinks.ts';
+
 const getYourGuideMainUrl = 'https://www.getyourguide.com/pl-pl/?partner_id=A65YU5Z&cmp=CL&visitor-id=S3YV8F2KJ34TP7ISL8LFOSR1MUGSEF64';
 
 export const affiliateLinks = {
@@ -17,8 +19,7 @@ export const affiliateLinks = {
   },
   airalo: {
     label: 'Airalo',
-    // TODO: Replace with the real Airalo affiliate URL when available.
-    url: '#replace-airalo-affiliate-url'
+    url: airaloLinks.main
   },
   holidaycheck: {
     label: 'HolidayCheck',

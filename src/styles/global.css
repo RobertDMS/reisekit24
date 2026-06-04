@@ -639,6 +639,73 @@ p {
   font-weight: 850;
 }
 
+.esim-airalo-panel .lead {
+  max-width: 780px;
+}
+
+.esim-country-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.esim-country-card {
+  min-height: 100%;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.esim-country-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.esim-country-card .image-cover {
+  height: 176px;
+}
+
+.esim-country-card .card-body {
+  min-height: 220px;
+}
+
+.esim-card-button {
+  width: 100%;
+  margin-top: 4px;
+  pointer-events: none;
+}
+
+.more-destinations {
+  display: grid;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.more-destinations .section-head {
+  margin-bottom: 0;
+}
+
+.country-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.country-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 850;
+  box-shadow: 0 8px 18px rgba(16, 42, 86, 0.06);
+}
+
+.country-pill:hover {
+  border-color: rgba(255, 107, 26, 0.35);
+  background: var(--orange-soft);
+}
+
 .blog-card .image-cover {
   height: 190px;
 }
@@ -955,6 +1022,10 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .esim-country-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .benefit-strip {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1057,6 +1128,10 @@ p {
 
   .affiliate-destination-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .esim-country-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .cta-panel {
