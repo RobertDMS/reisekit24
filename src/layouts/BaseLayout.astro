@@ -11,6 +11,15 @@ const isUnderConstruction = site.underConstruction;
 <!doctype html>
 <html lang="de">
   <head>
+    <!-- Google Tag Manager -->
+    <script is:inline>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PRVJ2K6T');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <Seo title={title} description={description} path={path} image={image} type={type} schema={schema} />
@@ -18,6 +27,16 @@ const isUnderConstruction = site.underConstruction;
     <script async defer src="https://widget.getyourguide.com/dist/pa.umd.production.min.js" data-gyg-partner-id="A65YU5Z"></script>
   </head>
   <body class:list={[{ 'construction-body': isUnderConstruction }]}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PRVJ2K6T"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     {isUnderConstruction ? (
       <main class="construction-page" aria-labelledby="construction-title">
         <section class="construction-card">
