@@ -1,0 +1,1 @@
+import"./hoisted.acj-eq8r.js";document.querySelectorAll("[data-faq-show-more]").forEach(e=>{e.addEventListener("click",()=>{e.previousElementSibling?.querySelectorAll(".faq-extra-hidden").forEach(r=>{r.classList.remove("faq-extra-hidden")}),e.remove()})});

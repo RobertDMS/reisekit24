@@ -30,7 +30,7 @@ export const affiliateLinks = {
 
 // GetYourGuide destination affiliate links.
 // Each destination can use its own GetYourGuide affiliate URL.
-// Required link attributes in templates: target="_blank" and rel="sponsored noopener noreferrer".
+// Required link attributes in templates: target="_blank" and rel="sponsored nofollow noopener".
 export const getYourGuideDestinations = [
   {
     destinationName: 'Barcelona',

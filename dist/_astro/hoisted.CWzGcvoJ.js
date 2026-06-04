@@ -1,1 +1,0 @@
-const e=document.querySelector(".nav-toggle"),n=document.querySelector("#site-nav");e?.addEventListener("click",()=>{const t=n?.getAttribute("data-open")==="true";n?.setAttribute("data-open",String(!t)),e.setAttribute("aria-expanded",String(!t)),document.body.classList.toggle("menu-open",!t)});

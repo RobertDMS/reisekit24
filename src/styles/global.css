@@ -907,6 +907,21 @@ p {
   color: var(--white);
 }
 
+.footer-cookie-button {
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.88);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.footer-cookie-button:hover {
+  color: var(--white);
+}
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -962,6 +977,15 @@ p {
   object-fit: cover;
 }
 
+.external-consent-placeholder {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  border: 1px dashed rgba(16, 42, 86, 0.2);
+  border-radius: 18px;
+  background: var(--bg);
+}
+
 .content {
   display: grid;
   gap: 18px;
@@ -1010,6 +1034,172 @@ p {
   gap: 10px;
 }
 
+.cookie-consent {
+  position: fixed;
+  z-index: 80;
+  right: 14px;
+  bottom: 14px;
+  left: 14px;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.cookie-card {
+  display: grid;
+  gap: 16px;
+  max-width: 520px;
+  margin-inline: auto;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow);
+}
+
+.cookie-copy {
+  display: grid;
+  gap: 9px;
+}
+
+.cookie-copy h2,
+.cookie-modal-head h2 {
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+}
+
+.cookie-copy p,
+.cookie-modal-head p,
+.cookie-category small {
+  color: var(--muted);
+}
+
+.cookie-small-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.cookie-small-links a {
+  color: var(--navy);
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cookie-actions,
+.cookie-modal-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.cookie-text-button {
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--navy);
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.cookie-text-button:hover {
+  background: var(--bg);
+}
+
+.cookie-modal {
+  position: fixed;
+  z-index: 90;
+  inset: 0;
+  display: grid;
+  place-items: end center;
+  padding: 14px;
+}
+
+.cookie-modal[hidden],
+.cookie-consent[hidden] {
+  display: none;
+}
+
+.cookie-modal-open {
+  overflow: hidden;
+}
+
+.cookie-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 42, 86, 0.28);
+}
+
+.cookie-modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 720px);
+  max-height: calc(100vh - 28px);
+  overflow: auto;
+  display: grid;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.cookie-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--navy);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cookie-modal-head {
+  display: grid;
+  gap: 10px;
+  padding-right: 42px;
+}
+
+.cookie-category-list {
+  display: grid;
+  gap: 10px;
+}
+
+.cookie-category {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--bg);
+}
+
+.cookie-category span {
+  display: grid;
+  gap: 5px;
+}
+
+.cookie-category strong {
+  color: var(--navy);
+}
+
+.cookie-category input {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--orange);
+}
+
 @media (min-width: 640px) {
   .hero-actions {
     display: flex;
@@ -1045,6 +1235,12 @@ p {
 
   .footer-columns {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cookie-actions,
+  .cookie-modal-actions {
+    grid-template-columns: repeat(3, minmax(0, auto));
+    align-items: center;
   }
 }
 
@@ -1146,6 +1342,21 @@ p {
   .footer-grid {
     grid-template-columns: 0.9fr 1.1fr;
     align-items: start;
+  }
+
+  .cookie-consent {
+    right: 22px;
+    bottom: 22px;
+    left: auto;
+  }
+
+  .cookie-card {
+    margin-inline: 0;
+  }
+
+  .cookie-modal {
+    place-items: center;
+    padding: 22px;
   }
 }
 

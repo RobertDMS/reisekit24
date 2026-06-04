@@ -52,7 +52,7 @@ const faqSchema = {
         <p class="eyebrow">GetYourGuide Partner</p>
         <h1>Ausflüge, Tickets und Aktivitäten finden</h1>
         <p class="lead">Entdecke Touren, Eintrittskarten und Erlebnisse für deine nächste Reise. Buchbare Angebote führen aktuell zu GetYourGuide.</p>
-        <a class="button" href={featuredDestination.getYourGuideUrl} target="_blank" rel="sponsored noopener noreferrer">{featuredDestination.ctaLabel}</a>
+        <a class="button" href={featuredDestination.getYourGuideUrl} target="_blank" rel="sponsored nofollow noopener">{featuredDestination.ctaLabel}</a>
       </div>
       <img src={page.image} alt={page.alt} width="900" height="620" />
     </div>
@@ -89,7 +89,7 @@ const faqSchema = {
             <h3>{item.destinationName}</h3>
             <p class="affiliate-country">{item.country}</p>
             <p>{getDestinationDescription(item)}</p>
-            <a class="button" href={item.getYourGuideUrl} target="_blank" rel="sponsored noopener noreferrer">{item.ctaLabel}</a>
+            <a class="button" href={item.getYourGuideUrl} target="_blank" rel="sponsored nofollow noopener">{item.ctaLabel}</a>
           </article>
         ))}
       </div>
@@ -104,7 +104,7 @@ const faqSchema = {
           <h2>Ausflüge und Tickets bei GetYourGuide ansehen</h2>
           <p class="lead">GetYourGuide ist aktuell der aktive Affiliate-Partner für buchbare Aktivitäten auf reisekit24.</p>
         </div>
-        <a class="button" href={featuredDestination.getYourGuideUrl} target="_blank" rel="sponsored noopener noreferrer">{featuredDestination.ctaLabel}</a>
+        <a class="button" href={featuredDestination.getYourGuideUrl} target="_blank" rel="sponsored nofollow noopener">{featuredDestination.ctaLabel}</a>
       </div>
     </div>
   </section>

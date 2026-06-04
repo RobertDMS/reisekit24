@@ -2,15 +2,23 @@
 const { title, partner, description, image, alt, href, cta = 'Zum Partner' } = Astro.props;
 ---
 <section class="widget" aria-label={`${partner} Widget`}>
-  <img src={image} alt={alt} width="900" height="520" loading="lazy" />
-  <div class="content">
+  <div class="external-consent-placeholder" data-external-consent-placeholder>
     <p class="eyebrow">{partner}</p>
-    <h2>{title}</h2>
-    <p class="lead">{description}</p>
-    {href ? (
-      <a class="button" href={href} target="_blank" rel="sponsored nofollow noopener"> {cta} </a>
-    ) : (
-      <span class="button muted-button">{cta}</span>
-    )}
+    <h2>Externe Inhalte sind deaktiviert</h2>
+    <p class="lead">Externe Inhalte sind deaktiviert. Du kannst sie in den Cookie-Einstellungen aktivieren.</p>
+    <button class="button secondary" type="button" data-cookie-settings>Cookie-Einstellungen öffnen</button>
+  </div>
+  <div data-external-widget-content hidden>
+    <img src={image} alt={alt} width="900" height="520" loading="lazy" />
+    <div class="content">
+      <p class="eyebrow">{partner}</p>
+      <h2>{title}</h2>
+      <p class="lead">{description}</p>
+      {href ? (
+        <a class="button" href={href} target="_blank" rel="sponsored nofollow noopener"> {cta} </a>
+      ) : (
+        <span class="button muted-button">{cta}</span>
+      )}
+    </div>
   </div>
 </section>

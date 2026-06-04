@@ -1,0 +1,86 @@
+<div class="cookie-consent" data-cookie-banner hidden role="region" aria-label="Cookie-Einstellungen">
+  <div class="cookie-card">
+    <div class="cookie-copy">
+      <h2>Cookie-Einstellungen</h2>
+      <p>
+        Wir verwenden notwendige Cookies, damit diese Website funktioniert. Mit deiner Zustimmung nutzen wir außerdem Analyse-, Marketing- und Partnerdienste, um Inhalte zu verbessern, Kampagnen auszuwerten und externe Angebotsmodule einzubinden.
+      </p>
+      <div class="cookie-small-links">
+        <a href="/datenschutz/">Datenschutz</a>
+        <a href="/affiliate-hinweis/">Affiliate-Hinweis</a>
+      </div>
+    </div>
+    <div class="cookie-actions">
+      <button class="button" type="button" data-cookie-accept-all>Alle akzeptieren</button>
+      <button class="button secondary" type="button" data-cookie-necessary>Nur notwendige Cookies</button>
+      <button class="cookie-text-button" type="button" data-cookie-settings>Einstellungen</button>
+    </div>
+  </div>
+</div>
+
+<div class="cookie-modal" data-cookie-modal hidden>
+  <div class="cookie-modal-backdrop" data-cookie-close></div>
+  <section
+    class="cookie-modal-panel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cookie-modal-title"
+    aria-describedby="cookie-modal-intro"
+  >
+    <button class="cookie-close" type="button" data-cookie-close aria-label="Cookie-Einstellungen schließen">×</button>
+    <div class="cookie-modal-head">
+      <h2 id="cookie-modal-title">Cookie-Einstellungen verwalten</h2>
+      <p id="cookie-modal-intro">
+        Du kannst selbst entscheiden, welche Cookies und Dienste wir verwenden dürfen. Notwendige Cookies sind immer aktiv, weil die Website sonst nicht richtig funktioniert. Du kannst deine Auswahl jederzeit ändern.
+      </p>
+      <div class="cookie-small-links">
+        <a href="/datenschutz/">Datenschutz</a>
+        <a href="/affiliate-hinweis/">Affiliate-Hinweis</a>
+      </div>
+    </div>
+
+    <div class="cookie-category-list">
+      <label class="cookie-category">
+        <span>
+          <strong>Notwendige Cookies</strong>
+          <small>Diese Cookies sind erforderlich, damit die Website technisch funktioniert, deine Cookie-Auswahl gespeichert wird und grundlegende Sicherheitsfunktionen möglich sind.</small>
+        </span>
+        <input type="checkbox" checked disabled aria-label="Notwendige Cookies immer aktiv" />
+      </label>
+
+      <label class="cookie-category">
+        <span>
+          <strong>Analyse</strong>
+          <small>Hilft uns zu verstehen, welche Seiten genutzt werden und wie wir reisekit24 verbessern können. Dazu kann später z. B. Google Analytics gehören.</small>
+        </span>
+        <input type="checkbox" data-cookie-option="analytics" aria-label="Analyse Cookies erlauben" />
+      </label>
+
+      <label class="cookie-category">
+        <span>
+          <strong>Marketing</strong>
+          <small>Erlaubt uns, Kampagnen und Conversions auszuwerten und Marketingdienste wie Google Ads, Meta Pixel oder TikTok Pixel zu verwenden.</small>
+        </span>
+        <input type="checkbox" data-cookie-option="marketing" aria-label="Marketing Cookies erlauben" />
+      </label>
+
+      <label class="cookie-category">
+        <span>
+          <strong>Externe Medien & Partner</strong>
+          <small>Erlaubt das Laden externer Inhalte und Partner-Widgets, zum Beispiel Buchungs- oder Angebotsmodule von Reise- und Affiliate-Partnern.</small>
+        </span>
+        <input type="checkbox" data-cookie-option="external" aria-label="Externe Medien und Partner erlauben" />
+      </label>
+    </div>
+
+    <div class="cookie-modal-actions">
+      <button class="button" type="button" data-cookie-save>Auswahl speichern</button>
+      <button class="button secondary" type="button" data-cookie-modal-accept-all>Alle akzeptieren</button>
+      <button class="cookie-text-button" type="button" data-cookie-modal-necessary>Nur notwendige Cookies</button>
+    </div>
+  </section>
+</div>
+
+<script>
+  import '../scripts/cookieConsent.js';
+</script>
