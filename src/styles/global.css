@@ -1420,6 +1420,35 @@ p {
   box-shadow: 0 8px 18px rgba(16, 42, 86, 0.05);
 }
 
+.article-hero-cta {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid rgba(255, 107, 26, 0.28);
+  border-radius: 22px;
+  background: linear-gradient(135deg, #fff7f1 0%, #ffffff 75%);
+  box-shadow: 0 12px 26px rgba(16, 42, 86, 0.08);
+}
+
+.article-hero-cta-copy {
+  display: grid;
+  gap: 7px;
+}
+
+.article-hero-cta-copy strong {
+  color: var(--navy);
+  font-size: 1.02rem;
+}
+
+.article-hero-cta-copy p {
+  color: var(--muted);
+}
+
+.article-hero-cta-actions {
+  display: grid;
+  gap: 10px;
+}
+
 .article-answer-box {
   display: grid;
   gap: 12px;
@@ -1525,7 +1554,7 @@ p {
   border-radius: 999px;
   background: var(--orange-soft);
   color: var(--orange);
-  content: "âś“";
+  content: "Ă˘Ĺ›â€ś";
   font-size: 0.82rem;
   font-weight: 900;
 }

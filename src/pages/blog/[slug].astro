@@ -49,6 +49,18 @@ const faqSchema = {
               {post.keyFacts.map((fact) => <span>{fact}</span>)}
             </div>
           )}
+          {post.heroCta && (
+            <div class="article-hero-cta">
+              <div class="article-hero-cta-copy">
+                <strong>{post.heroCta.heading}</strong>
+                <p>{post.heroCta.text}</p>
+              </div>
+              <div class="article-hero-cta-actions">
+                <a class="button" href={post.heroCta.primary.href} target={post.heroCta.primary.external ? '_blank' : undefined} rel={post.heroCta.primary.external ? 'sponsored nofollow noopener' : undefined}>{post.heroCta.primary.label}</a>
+                {post.heroCta.secondary && <a class="button secondary" href={post.heroCta.secondary.href}>{post.heroCta.secondary.label}</a>}
+              </div>
+            </div>
+          )}
         </div>
         <img src={post.image} alt={post.alt} width="1200" height="675" />
       </div>
