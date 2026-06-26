@@ -304,6 +304,152 @@ export const posts = [
     ]
   },
   {
+    slug: 'sim-karte-oder-esim-im-urlaub',
+    title: 'SIM-Karte oder eSIM im Urlaub: Was ist besser f\u00fcr Reisen?',
+    seoTitle: 'SIM-Karte oder eSIM im Urlaub: Vergleich, Tipps & Kostenfallen',
+    description: 'SIM-Karte, eSIM, Roaming oder WLAN im Urlaub? Der praktische Reise-Guide erkl\u00e4rt, was sich wann lohnt, wie viel Datenvolumen du brauchst und welche Fehler du vermeiden solltest.',
+    date: '2026-06-26',
+    dateModified: '2026-06-26',
+    category: 'eSIM',
+    keywords: 'SIM-Karte Urlaub, eSIM Urlaub, SIM-Karte Reise, mobile Daten Ausland, Roaming Alternative, Internet im Urlaub',
+    image: images.blog.simKarten,
+    alt: 'Smartphone, SIM-Karte und Reisedokumente als Vorbereitung f\u00fcr mobiles Internet im Urlaub',
+    intro: 'Wer im Urlaub online bleiben m\u00f6chte, hat mehrere Optionen: klassische SIM-Karte, eSIM, Roaming oder WLAN. Die beste Wahl h\u00e4ngt von Reiseziel, Aufenthaltsdauer, Smartphone und Datenbedarf ab.',
+    keyFacts: ['eSIM ist oft am bequemsten', 'Lokale SIM kann bei langen Reisen g\u00fcnstig sein', 'Roaming vorher im Tarif pr\u00fcfen', 'WLAN allein reicht selten f\u00fcr stressfreies Reisen'],
+    quickAnswer: {
+      heading: 'Was ist im Urlaub besser: SIM-Karte oder eSIM?',
+      text: 'F\u00fcr kurze Reisen und Citytrips ist eine eSIM meistens die bequemste L\u00f6sung, weil du sie vor der Reise vorbereiten kannst und keine Plastikkarte wechseln musst. Eine klassische lokale SIM-Karte kann sich lohnen, wenn du lange bleibst, sehr viel Datenvolumen brauchst oder eine lokale Telefonnummer ben\u00f6tigst.'
+    },
+    sections: [
+      {
+        id: 'schnellvergleich',
+        eyebrow: 'Kurzentscheidung',
+        heading: 'SIM-Karte, eSIM, Roaming oder WLAN: der schnelle Vergleich',
+        body: [
+          'Viele Reisende suchen erst kurz vor dem Abflug nach einer L\u00f6sung f\u00fcr mobiles Internet. Besser ist es, schon bei der Reiseplanung zu entscheiden, ob du Roaming nutzt, eine eSIM kaufst oder vor Ort eine klassische SIM-Karte besorgst.',
+          'Der wichtigste Unterschied: Roaming nutzt deinen bestehenden Vertrag, eine eSIM ist ein digitales Datenpaket auf deinem Smartphone, und eine lokale SIM-Karte ist eine physische Karte aus dem Reiseland. WLAN ist hilfreich, aber als einzige L\u00f6sung oft unzuverl\u00e4ssig.'
+        ],
+        table: {
+          columns: ['Option', 'Vorteile', 'Nachteile', 'Beste Wahl f\u00fcr'],
+          rows: [
+            ['eSIM', 'Schnell, digital, oft vor der Reise installierbar.', 'Smartphone muss eSIM unterst\u00fctzen, meist reine Datenpakete.', 'Kurzreisen, Rundreisen, Citytrips, sofort online sein.'],
+            ['Klassische SIM-Karte', 'Kann bei langen Aufenthalten g\u00fcnstig sein, manchmal lokale Nummer inklusive.', 'Kauf vor Ort, SIM-Wechsel, Registrierung m\u00f6glich.', 'Lange Reisen, Austauschsemester, Workation, Vielnutzer.'],
+            ['Roaming', 'Einfach, kein neues Produkt n\u00f6tig.', 'Je nach Tarif teuer oder begrenzt.', 'EU-Reisen oder Tarife mit gutem Auslandspaket.'],
+            ['WLAN', 'Oft kostenlos im Hotel, Cafe oder Flughafen.', 'Nicht \u00fcberall stabil, unsicher f\u00fcr sensible Daten.', 'Backup, gro\u00dfe Downloads, Hotelnutzung.']
+          ]
+        }
+      },
+      {
+        id: 'wann-esim',
+        heading: 'Wann eine eSIM im Urlaub die beste Wahl ist',
+        body: [
+          'Eine eSIM lohnt sich besonders, wenn du direkt nach der Landung online sein willst. Navigation, Taxi-App, Messenger, Online-Tickets, Hoteladresse und \u00dcbersetzungen funktionieren dann ohne Suche nach einem Shop am Flughafen.',
+          'Praktisch ist auch, dass deine normale SIM-Karte im Handy bleiben kann. Auf vielen Smartphones nutzt du die eSIM f\u00fcr mobile Daten und deine normale Nummer weiterhin f\u00fcr Anrufe oder SMS.'
+        ],
+        bullets: [
+          'Du m\u00f6chtest die Verbindung schon vor der Reise vorbereiten.',
+          'Du brauchst vor allem mobile Daten, keine lokale Telefonnummer.',
+          'Du reist in mehrere L\u00e4nder oder wechselst h\u00e4ufig den Ort.',
+          'Du willst nicht am Flughafen nach einer SIM-Karte suchen.',
+          'Du nutzt ein eSIM-f\u00e4higes und entsperrtes Smartphone.'
+        ]
+      },
+      {
+        id: 'wann-simkarte',
+        heading: 'Wann eine klassische SIM-Karte sinnvoller sein kann',
+        body: [
+          'Eine lokale SIM-Karte kann besser sein, wenn du sehr lange im Reiseland bleibst oder besonders viel Datenvolumen brauchst. In manchen L\u00e4ndern sind lokale Tarife f\u00fcr mehrere Wochen oder Monate attraktiver als kurze Reise-eSIM-Pakete.',
+          'Der Nachteil ist der Aufwand: Du musst die Karte kaufen, eventuell registrieren, einsetzen und deine normale SIM sicher aufbewahren. Bei sehr fr\u00fcher Ankunft, sp\u00e4ter Landung oder Sprachbarrieren kann das nerven.'
+        ],
+        cards: [
+          { title: 'Lange Aufenthalte', text: 'Bei mehreren Wochen oder Monaten kann ein lokaler Tarif preislich interessanter sein.' },
+          { title: 'Lokale Telefonnummer', text: 'Manche Reisende brauchen eine lokale Nummer f\u00fcr Lieferdienste, Beh\u00f6rden oder lokale Apps.' },
+          { title: 'Sehr hoher Datenbedarf', text: 'Wenn du t\u00e4glich viel streamst oder Hotspot nutzt, solltest du lokale Tarife vergleichen.' }
+        ]
+      },
+      {
+        id: 'datenvolumen',
+        heading: 'Wie viel Datenvolumen brauchst du auf Reisen?',
+        body: [
+          'Der Datenbedarf h\u00e4ngt weniger vom Reiseziel ab als von deinem Verhalten. Karten, Messenger und Tickets brauchen wenig. Videos, Cloud-Backups, Hotspot und Social Media k\u00f6nnen ein kleines Paket schnell aufbrauchen.',
+          'Plane lieber etwas Puffer ein. Ein zu kleines Paket f\u00fchrt im Urlaub oft dazu, dass du Daten sparst, obwohl du sie gerade f\u00fcr Navigation, Umbuchung oder Kontakt zum Hotel brauchst.'
+        ],
+        table: {
+          columns: ['Reisetyp', 'Typischer Bedarf', 'Empfehlung'],
+          rows: [
+            ['Wochenendtrip', 'niedrig bis mittel', 'Kleines eSIM-Paket oder vorhandenes Roaming pr\u00fcfen.'],
+            ['1 Woche Urlaub', 'mittel', 'Datenpaket mit Puffer w\u00e4hlen, WLAN im Hotel erg\u00e4nzend nutzen.'],
+            ['Rundreise', 'mittel bis hoch', 'eSIM mit guter Abdeckung oder regionales Paket pr\u00fcfen.'],
+            ['Workation', 'hoch', 'Lokale SIM, gro\u00dfes eSIM-Paket oder Unterkunft mit stabilem WLAN kombinieren.'],
+            ['Familienreise', 'hoch', 'Mehrere Ger\u00e4te einplanen und Hotspot-Regeln beachten.']
+          ]
+        }
+      },
+      {
+        id: 'kostenfallen',
+        eyebrow: 'Wichtig',
+        heading: 'Kostenfallen bei SIM-Karten und Roaming vermeiden',
+        body: [
+          'Die gr\u00f6\u00dfte Kostenfalle ist unkontrolliertes Roaming au\u00dferhalb der EU. Auch kurze Nutzung von Karten, Fotos und Messenger kann teuer werden, wenn dein Tarif kein passendes Auslandspaket enth\u00e4lt.',
+          'Pr\u00fcfe vor dem Abflug, welche SIM f\u00fcr mobile Daten aktiv ist, ob Datenroaming eingeschaltet sein muss und ob dein eSIM-Paket Hotspot erlaubt. Diese kleinen Einstellungen entscheiden oft, ob mobiles Internet entspannt oder teuer wird.'
+        ],
+        bullets: [
+          'Roamingpreise deines bestehenden Tarifs vor der Reise pr\u00fcfen.',
+          'Automatische App-Updates und Cloud-Backups \u00fcber mobile Daten deaktivieren.',
+          'Bei eSIM-Paketen Laufzeit, Datenvolumen und Startzeitpunkt lesen.',
+          'Nicht erst am Flughafen ohne WLAN mit der Installation beginnen.',
+          'Bei Dual-SIM genau festlegen, welche SIM mobile Daten nutzt.'
+        ]
+      },
+      {
+        id: 'checkliste',
+        heading: 'Checkliste vor dem Abflug',
+        body: [
+          'Mit dieser kurzen Checkliste vermeidest du die h\u00e4ufigsten Probleme. Sie passt f\u00fcr eSIM, klassische SIM-Karte und Roaming.'
+        ],
+        bullets: [
+          'Ist dein Smartphone entsperrt und eSIM-f\u00e4hig?',
+          'Welche L\u00e4nder deckt dein Datenpaket wirklich ab?',
+          'Startet die Laufzeit beim Kauf, bei Installation oder erst im Zielland?',
+          'Funktioniert Hotspot, falls du Laptop oder zweites Handy verbinden willst?',
+          'Hast du QR-Code, Anleitung oder App-Zugang offline gespeichert?',
+          'Ist deine normale SIM f\u00fcr SMS oder Banking-Codes weiterhin erreichbar?'
+        ]
+      },
+      {
+        id: 'empfehlung',
+        eyebrow: 'Empfehlung',
+        heading: 'Unsere Empfehlung f\u00fcr normale Urlaubsreisen',
+        body: [
+          'F\u00fcr die meisten normalen Urlaubsreisen ist eine eSIM die bequemste L\u00f6sung: schnell vorbereitet, kein Kartenwechsel, kein Shop vor Ort und sofort mobile Daten nach der Ankunft. Roaming kann reichen, wenn dein Tarif im Reiseland gute Konditionen hat.',
+          'Eine klassische lokale SIM-Karte bleibt interessant, wenn du lange bleibst, sehr viel Datenvolumen brauchst oder eine lokale Telefonnummer nutzen willst. Entscheide also nicht nach Techniktrend, sondern nach Reisedauer, Datenbedarf und Komfort.'
+        ],
+        relatedLinks: [
+          { label: 'eSIM-Angebote f\u00fcr Reisen ansehen', href: affiliateLinks.airalo.url, external: true },
+          { label: 'eSIM-Reise\u00fcbersicht \u00f6ffnen', href: '/esim/' },
+          { label: 'eSIM f\u00fcr Deutschland: lohnt sich das?', href: '/blog/esim-deutschland-lohnt-sich/' }
+        ]
+      }
+    ],
+    finalCta: {
+      eyebrow: 'N\u00e4chster Schritt',
+      heading: 'Pr\u00fcfe dein Reiseziel, bevor du am Flughafen improvisierst',
+      text: 'Wenn du mobiles Internet vor der Reise planst, sparst du Zeit, Stress und oft auch Geld. Vergleiche zuerst Roaming, eSIM und lokale SIM nach deinem Reiseziel und Datenbedarf.',
+      primary: { label: 'eSIM-Angebote ansehen', href: affiliateLinks.airalo.url, external: true },
+      secondary: { label: 'Mehr eSIM-Ziele', href: '/esim/' }
+    },
+    faq: [
+      { question: 'Was ist besser im Urlaub: SIM-Karte oder eSIM?', answer: 'F\u00fcr kurze Reisen ist eine eSIM oft bequemer. Eine klassische SIM-Karte kann bei langen Aufenthalten, sehr hohem Datenbedarf oder Bedarf an lokaler Telefonnummer sinnvoller sein.' },
+      { question: 'Kann ich eine eSIM vor der Reise installieren?', answer: 'Ja, viele eSIMs lassen sich vor der Reise installieren. Aktiviere sie aber passend zur Anleitung des Anbieters, damit die Laufzeit nicht zu fr\u00fch startet.' },
+      { question: 'Brauche ich f\u00fcr eine eSIM WLAN?', answer: 'F\u00fcr Installation oder Aktivierung brauchst du meistens kurz WLAN oder eine bestehende Internetverbindung. Deshalb solltest du die Einrichtung vor dem Abflug vorbereiten.' },
+      { question: 'Ist Roaming im Urlaub immer teuer?', answer: 'Nein. Innerhalb der EU ist Roaming f\u00fcr viele Tarife gut nutzbar. Au\u00dferhalb der EU solltest du Kosten und Datenlimits vorab genau pr\u00fcfen.' },
+      { question: 'Kann ich eSIM und normale SIM gleichzeitig nutzen?', answer: 'Auf vielen modernen Smartphones ja. H\u00e4ufig bleibt die normale SIM f\u00fcr Anrufe und SMS aktiv, w\u00e4hrend die eSIM mobile Daten liefert.' },
+      { question: 'Wie viel Datenvolumen brauche ich im Urlaub?', answer: 'F\u00fcr Messenger, Navigation und Tickets reicht oft ein kleineres Paket. F\u00fcr Social Media, Videos, Hotspot oder Workation solltest du mehr Datenvolumen einplanen.' },
+      { question: 'Ist Hotel-WLAN als einzige L\u00f6sung genug?', answer: 'Meistens nein. Hotel-WLAN hilft, aber unterwegs brauchst du mobile Daten f\u00fcr Karten, Transfers, Tickets, Messenger und Notf\u00e4lle.' },
+      { question: 'Worauf muss ich beim Kauf einer Reise-eSIM achten?', answer: 'Achte auf Zielland, Netzabdeckung, Datenvolumen, Laufzeit, Hotspot-Regeln, Startzeitpunkt und ob dein Smartphone eSIM unterst\u00fctzt.' }
+    ]
+  },
+  {
     slug: 'pauschalreise-oder-hotel-separat',
     title: 'Pauschalreise oder Hotel separat buchen?',
     description: 'Pauschalreise oder einzelne Buchung? Der kurze Vergleich fÄ‚Ä˝r normale Urlaubsreisen.',

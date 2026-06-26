@@ -25,6 +25,7 @@ export const images = {
     // Blog thumbnails.
     mallorca: '/images/blog-mallorca-guide-2026.png',
     esim: '/images/blog-esim-deutschland-guide-2026.png',
+    simKarten: '/images/blog-simkarte-esim-reisen-2026.png',
     pauschalreise: '/images/blog-pauschalreise.webp'
   }
 };
