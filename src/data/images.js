@@ -23,8 +23,9 @@ export const images = {
   },
   blog: {
     // Blog thumbnails.
-    mallorca: '/images/blog-mallorca.webp',
-    esim: '/images/blog-esim.webp',
+    mallorca: '/images/blog-mallorca-guide-2026.png',
+    esim: '/images/blog-esim-deutschland-guide-2026.png',
     pauschalreise: '/images/blog-pauschalreise.webp'
   }
 };
+
