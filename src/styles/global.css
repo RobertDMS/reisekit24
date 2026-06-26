@@ -1525,7 +1525,7 @@ p {
   border-radius: 999px;
   background: var(--orange-soft);
   color: var(--orange);
-  content: "✓";
+  content: "âś“";
   font-size: 0.82rem;
   font-weight: 900;
 }
@@ -1551,6 +1551,26 @@ p {
 
 .article-mini-card p {
   color: var(--muted);
+}
+.article-card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 40px;
+  margin-top: 4px;
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 107, 26, 0.35);
+  border-radius: 999px;
+  background: var(--orange-soft);
+  color: var(--orange);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.article-card-link:hover {
+  background: var(--orange);
+  color: var(--white);
 }
 
 .article-table-wrap {

@@ -94,6 +94,7 @@ const faqSchema = {
                     <article class="article-mini-card">
                       <h3>{card.title}</h3>
                       <p>{card.text}</p>
+                      {card.linkHref && <a class="article-card-link" href={card.linkHref} target="_blank" rel="sponsored nofollow noopener">{card.linkLabel ?? 'Angebot ansehen'}</a>}
                     </article>
                   ))}
                 </div>
