@@ -25,20 +25,20 @@ const germanyEsimUrl = germanyEsim?.url ?? affiliateLinks.airalo.url;
 export const posts = [
   {
     slug: 'beste-ausfluege-mallorca',
-    title: 'Die besten AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge auf Mallorca: 11 AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge, die sich wirklich lohnen',
-    seoTitle: 'Beste AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge auf Mallorca: 11 Ideen, Tipps & Buchungshilfe',
-    description: 'Die besten AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge auf Mallorca: Bootstouren, Palma, Tramuntana, HÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶hlen, Familienideen, Tipps zur Buchung und klare Empfehlungen nach Urlaubstyp.',
+    title: 'Die besten Ausflüge auf Mallorca: 11 Ausflüge, die sich wirklich lohnen',
+    seoTitle: 'Beste Ausflüge auf Mallorca: 11 Ideen, Tipps & Buchungshilfe',
+    description: 'Die besten Ausflüge auf Mallorca: Bootstouren, Palma, Tramuntana, Höhlen, Familienideen, Tipps zur Buchung und klare Empfehlungen nach Urlaubstyp.',
     date: '2026-05-01',
     dateModified: '2026-06-26',
-    category: 'AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge',
-    keywords: 'Mallorca AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge, beste AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge Mallorca, Bootstour Mallorca, Palma Ausflug, Tramuntana, Mallorca Familie',
+    category: 'Ausflüge',
+    keywords: 'Mallorca Ausflüge, beste Ausflüge Mallorca, Bootstour Mallorca, Palma Ausflug, Tramuntana, Mallorca Familie',
     image: images.blog.mallorca,
-    alt: 'Mallorca KÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄste mit tÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄrkisblauem Wasser und Aussichtspunkt fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge',
-    intro: 'Mallorca ist mehr als Strand: Die Insel eignet sich perfekt fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Bootstouren, AltstadtspaziergÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤nge, BergdÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶rfer, FamilienausflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge und kurze Erlebnisse, die auch in eine Pauschalreise passen.',
-    keyFacts: ['Beste Reisezeit: FrÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄhling bis Herbst', 'Ideal fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Paare, Familien und Erstbesucher', 'Viele Touren sind halbtags planbar', 'Beliebte AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge frÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄh reservieren'],
+    alt: 'Mallorca Küste mit türkisblauem Wasser und Aussichtspunkt für Ausflüge',
+    intro: 'Mallorca ist mehr als Strand: Die Insel eignet sich perfekt für Bootstouren, Altstadtspaziergänge, Bergdörfer, Familienausflüge und kurze Erlebnisse, die auch in eine Pauschalreise passen.',
+    keyFacts: ['Beste Reisezeit: Frühling bis Herbst', 'Ideal für Paare, Familien und Erstbesucher', 'Viele Touren sind halbtags planbar', 'Beliebte Ausflüge früh reservieren'],
     quickAnswer: {
-      heading: 'Welche AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge auf Mallorca lohnen sich am meisten?',
-      text: 'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr die meisten Reisenden lohnt sich die Kombination aus Bootstour, Palma Altstadt, Serra de Tramuntana und einem entspannten Familien- oder Naturausflug. Wer nur wenig Zeit hat, sollte eine Bootstour und einen Ausflug nach SÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺˇller oder Valldemossa priorisieren.'
+      heading: 'Welche Ausflüge auf Mallorca lohnen sich am meisten?',
+      text: 'Für die meisten Reisenden lohnt sich die Kombination aus Bootstour, Palma Altstadt, Serra de Tramuntana und einem entspannten Familien- oder Naturausflug. Wer nur wenig Zeit hat, sollte eine Bootstour und einen Ausflug nach Sóller oder Valldemossa priorisieren.'
     },
     sections: [
       {
@@ -46,179 +46,179 @@ export const posts = [
         eyebrow: 'Entscheidungshilfe',
         heading: 'Die schnelle Empfehlung nach Urlaubstyp',
         body: [
-          'Der beste Mallorca-Ausflug hÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngt stark davon ab, wie du reist: mit Kindern, als Paar, mit Freunden, zum ersten Mal auf der Insel oder mit Mietwagen. Die folgende Ä‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺźbersicht hilft dir, sofort eine passende Richtung zu finden.',
-          'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr SEO und echte Reiseplanung ist wichtig: Nicht jeder Ausflug ist fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr jeden Urlaub sinnvoll. Eine dreistÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄndige Bootstour kann besser sein als ein voller Tagestrip, wenn du im Hotel entspannen mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chtest. Umgekehrt lohnt sich ein ganzer Tag in der Tramuntana, wenn du Mallorca abseits der Badeorte erleben willst.'
+          'Der beste Mallorca-Ausflug hängt stark davon ab, wie du reist: mit Kindern, als Paar, mit Freunden, zum ersten Mal auf der Insel oder mit Mietwagen. Die folgende Übersicht hilft dir, sofort eine passende Richtung zu finden.',
+          'Für SEO und echte Reiseplanung ist wichtig: Nicht jeder Ausflug ist für jeden Urlaub sinnvoll. Eine dreistündige Bootstour kann besser sein als ein voller Tagestrip, wenn du im Hotel entspannen möchtest. Umgekehrt lohnt sich ein ganzer Tag in der Tramuntana, wenn du Mallorca abseits der Badeorte erleben willst.'
         ],
         table: {
           columns: ['Urlaubstyp', 'Bester Ausflug', 'Warum er passt', 'Tipp'],
           rows: [
-            ['Erster Mallorca-Urlaub', 'Palma + Bootstour', 'Du bekommst Stadt, Meer und InselgefÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄhl in kurzer Zeit.', 'Nicht zu viel an einen Tag hÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngen.'],
-            ['Paarurlaub', 'Katamaran oder Sonnenuntergangstour', 'Entspannt, fotogen und ohne viel Organisation.', 'FrÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄhere Abfahrten sind oft ruhiger.'],
-            ['Familienurlaub', 'HÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶hlen, Aquarium oder kurze Bootsfahrt', 'Planbar, wetterunabhÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngig und gut fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Kinder.', 'Dauer und Transfers vorher prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen.'],
-            ['Aktive Reisende', 'Serra de Tramuntana oder Fahrradtour', 'Landschaft, Aussicht und Bewegung.', 'Im Sommer frÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄh starten.'],
-            ['Ohne Mietwagen', 'GefÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄhrte Tour ab Hotelregion', 'Weniger Stress mit Parken und Routen.', 'Treffpunkt und RÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄckfahrt genau lesen.']
+            ['Erster Mallorca-Urlaub', 'Palma + Bootstour', 'Du bekommst Stadt, Meer und Inselgefühl in kurzer Zeit.', 'Nicht zu viel an einen Tag hängen.'],
+            ['Paarurlaub', 'Katamaran oder Sonnenuntergangstour', 'Entspannt, fotogen und ohne viel Organisation.', 'Frühere Abfahrten sind oft ruhiger.'],
+            ['Familienurlaub', 'Höhlen, Aquarium oder kurze Bootsfahrt', 'Planbar, wetterunabhängig und gut für Kinder.', 'Dauer und Transfers vorher prüfen.'],
+            ['Aktive Reisende', 'Serra de Tramuntana oder Fahrradtour', 'Landschaft, Aussicht und Bewegung.', 'Im Sommer früh starten.'],
+            ['Ohne Mietwagen', 'Geführte Tour ab Hotelregion', 'Weniger Stress mit Parken und Routen.', 'Treffpunkt und Rückfahrt genau lesen.']
           ]
         }
       },
       {
         id: 'top-ausfluege',
         eyebrow: 'Top-Auswahl',
-        heading: '11 GetYourGuide-AusflÄ‚Ä˝ge auf Mallorca, die du direkt prÄ‚Ä˝fen kannst',
+        heading: '11 GetYourGuide-Ausflüge auf Mallorca, die du direkt prüfen kannst',
         body: [
-          'Diese Auswahl orientiert sich an sichtbaren Mallorca-Angeboten auf GetYourGuide: Kathedrale, Katamaran, Delfine, Formentor, Sa Calobra, Wasserpark, Glasbodenboot und aktive Erlebnisse. Die Links fÄ‚Ä˝hren direkt zu den jeweiligen Angebotsseiten oder passenden Angebotsseiten, damit du sie spÄ‚Â¤ter prÄ‚Ä˝fen und bei Bedarf austauschen kannst.'
+          'Diese Auswahl orientiert sich an sichtbaren Mallorca-Angeboten auf GetYourGuide: Kathedrale, Katamaran, Delfine, Formentor, Sa Calobra, Wasserpark, Glasbodenboot und aktive Erlebnisse. Die Links führen direkt zu den jeweiligen Angebotsseiten oder passenden Angebotsseiten, damit du sie später prüfen und bei Bedarf austauschen kannst.'
         ],
         cards: [
-          { title: '1. Palma: Kathedrale von Mallorca ohne Anstehen', text: 'Starker Kultur-Ausflug fÄ‚Ä˝r Palma: ideal, wenn du wenig Zeit hast und die Kathedrale La Seu ohne langes Warten einbauen mÄ‚Â¶chtest.', linkLabel: 'Kathedrale-Ticket ansehen', linkHref: mallorcaOfferLinks.palmaCathedral },
-          { title: '2. Palma: 5-stÄ‚Ä˝ndige Katamaranfahrt mit Mittagessen', text: 'Eine der passendsten Optionen fÄ‚Ä˝r Paare, Freunde und Erstbesucher: Bucht von Palma, Schwimmen, Essen und viel UrlaubsgefÄ‚Ä˝hl in einem halben Tag.', linkLabel: 'Katamaranfahrt ab Palma ansehen', linkHref: mallorcaOfferLinks.palmaCatamaranLunch },
-          { title: '3. Cala dĂ˘â‚¬â„˘Or: Jet-Ski nach Cala MondragÄ‚Ĺ‚', text: 'FÄ‚Ä˝r Reisende, die einen aktiven Ausflug suchen. Gut als kurzer Adrenalin-Baustein an der OstkÄ‚Ä˝ste, besonders rund um Cala dĂ˘â‚¬â„˘Or.', linkLabel: 'Jet-Ski-Tour ansehen', linkHref: mallorcaOfferLinks.calaMondragoJetSki },
-          { title: '4. Western Water Park', text: 'Klassischer Familienausflug, wenn Kinder Abwechslung vom Strand mÄ‚Â¶chten. Besonders sinnvoll an sehr heiÄ‚Ĺşen Tagen oder bei Urlaub in der Region Magaluf.', linkLabel: 'Water-Park-Ticket ansehen', linkHref: mallorcaOfferLinks.westernWaterPark },
-          { title: '5. AlcÄ‚Ĺźdia oder Can Picafort: Delfin-Watching', text: 'Sehr beliebte Bootstour fÄ‚Ä˝r Familien und Paare. FrÄ‚Ä˝h am Tag oft stimmungsvoll, mit klarer Dauer und gut planbar ab dem Norden der Insel.', linkLabel: 'Delfin-Tour ansehen', linkHref: mallorcaOfferLinks.alcudiaDolphins },
-          { title: '6. Cala Millor: Glasbodenboot an der OstkÄ‚Ä˝ste', text: 'Entspannter Ausflug fÄ‚Ä˝r Familien und Reisende, die Meerblick mÄ‚Â¶chten, aber keine lange oder sportliche Tour planen wollen.', linkLabel: 'Glasbodenboot ansehen', linkHref: mallorcaOfferLinks.glassBottomEast },
-          { title: '7. Port dĂ˘â‚¬â„˘AlcÄ‚Ĺźdia: Katamaran an der NordkÄ‚Ä˝ste mit Mahlzeit', text: 'Gute Wahl fÄ‚Ä˝r den Norden Mallorcas: lÄ‚Â¤ngere Katamaranfahrt, KÄ‚Ä˝ste, Badestopps und Essen in einem Ausflug.', linkLabel: 'NordkÄ‚Ä˝sten-Katamaran ansehen', linkHref: mallorcaOfferLinks.northCoastCatamaran },
-          { title: '8. Palma: Deluxe-Katamaran mit Snacks, SUP und Schnorcheln', text: 'Komfortablere Katamaran-Variante fÄ‚Ä˝r alle, die mehr an Bord erleben mÄ‚Â¶chten: Snacks, GetrÄ‚Â¤nke, SUP und Schnorcheln.', linkLabel: 'Deluxe-Katamaran ansehen', linkHref: mallorcaOfferLinks.palmaDeluxeCatamaran },
-          { title: '9. SÄ‚Ĺ‚ller: Bootsfahrt nach Sa Calobra und Torrent de Pareis', text: 'Sehr guter Naturausflug, wenn du SÄ‚Ĺ‚ller, die WestkÄ‚Ä˝ste und Sa Calobra verbinden mÄ‚Â¶chtest. Besonders schÄ‚Â¶n fÄ‚Ä˝r Landschaft und Fotos.', linkLabel: 'Sa-Calobra-Bootsfahrt ansehen', linkHref: mallorcaOfferLinks.sollerSaCalobra },
-          { title: '10. Puerto PollenÄ‚Â§a: FÄ‚Â¤hre zum Strand von Formentor', text: 'Praktische LÄ‚Â¶sung, um Formentor vom Wasser aus zu erleben. Gut, wenn du Parkstress und Verkehrsregeln rund um Formentor vermeiden mÄ‚Â¶chtest.', linkLabel: 'Formentor-FÄ‚Â¤hre ansehen', linkHref: mallorcaOfferLinks.formentorFerry },
-          { title: '11. Port dĂ˘â‚¬â„˘AlcÄ‚Ĺźdia: Sonnenaufgang und Delfinbeobachtung', text: 'FÄ‚Ä˝r FrÄ‚Ä˝haufsteher eine der emotionalsten Touren: Sonnenaufgang auf dem Wasser plus Chance auf Delfine vor der KÄ‚Ä˝ste.', linkLabel: 'Sonnenaufgangs-Tour ansehen', linkHref: mallorcaOfferLinks.sunriseDolphins }
+          { title: '1. Palma: Kathedrale von Mallorca ohne Anstehen', text: 'Starker Kultur-Ausflug für Palma: ideal, wenn du wenig Zeit hast und die Kathedrale La Seu ohne langes Warten einbauen möchtest.', linkLabel: 'Kathedrale-Ticket ansehen', linkHref: mallorcaOfferLinks.palmaCathedral },
+          { title: '2. Palma: 5-stündige Katamaranfahrt mit Mittagessen', text: 'Eine der passendsten Optionen für Paare, Freunde und Erstbesucher: Bucht von Palma, Schwimmen, Essen und viel Urlaubsgefühl in einem halben Tag.', linkLabel: 'Katamaranfahrt ab Palma ansehen', linkHref: mallorcaOfferLinks.palmaCatamaranLunch },
+          { title: '3. Cala d’Or: Jet-Ski nach Cala Mondragó', text: 'Für Reisende, die einen aktiven Ausflug suchen. Gut als kurzer Adrenalin-Baustein an der Ostküste, besonders rund um Cala d’Or.', linkLabel: 'Jet-Ski-Tour ansehen', linkHref: mallorcaOfferLinks.calaMondragoJetSki },
+          { title: '4. Western Water Park', text: 'Klassischer Familienausflug, wenn Kinder Abwechslung vom Strand möchten. Besonders sinnvoll an sehr heißen Tagen oder bei Urlaub in der Region Magaluf.', linkLabel: 'Water-Park-Ticket ansehen', linkHref: mallorcaOfferLinks.westernWaterPark },
+          { title: '5. Alcúdia oder Can Picafort: Delfin-Watching', text: 'Sehr beliebte Bootstour für Familien und Paare. Früh am Tag oft stimmungsvoll, mit klarer Dauer und gut planbar ab dem Norden der Insel.', linkLabel: 'Delfin-Tour ansehen', linkHref: mallorcaOfferLinks.alcudiaDolphins },
+          { title: '6. Cala Millor: Glasbodenboot an der Ostküste', text: 'Entspannter Ausflug für Familien und Reisende, die Meerblick möchten, aber keine lange oder sportliche Tour planen wollen.', linkLabel: 'Glasbodenboot ansehen', linkHref: mallorcaOfferLinks.glassBottomEast },
+          { title: '7. Port d’Alcúdia: Katamaran an der Nordküste mit Mahlzeit', text: 'Gute Wahl für den Norden Mallorcas: längere Katamaranfahrt, Küste, Badestopps und Essen in einem Ausflug.', linkLabel: 'Nordküsten-Katamaran ansehen', linkHref: mallorcaOfferLinks.northCoastCatamaran },
+          { title: '8. Palma: Deluxe-Katamaran mit Snacks, SUP und Schnorcheln', text: 'Komfortablere Katamaran-Variante für alle, die mehr an Bord erleben möchten: Snacks, Getränke, SUP und Schnorcheln.', linkLabel: 'Deluxe-Katamaran ansehen', linkHref: mallorcaOfferLinks.palmaDeluxeCatamaran },
+          { title: '9. Sóller: Bootsfahrt nach Sa Calobra und Torrent de Pareis', text: 'Sehr guter Naturausflug, wenn du Sóller, die Westküste und Sa Calobra verbinden möchtest. Besonders schön für Landschaft und Fotos.', linkLabel: 'Sa-Calobra-Bootsfahrt ansehen', linkHref: mallorcaOfferLinks.sollerSaCalobra },
+          { title: '10. Puerto Pollença: Fähre zum Strand von Formentor', text: 'Praktische Lösung, um Formentor vom Wasser aus zu erleben. Gut, wenn du Parkstress und Verkehrsregeln rund um Formentor vermeiden möchtest.', linkLabel: 'Formentor-Fähre ansehen', linkHref: mallorcaOfferLinks.formentorFerry },
+          { title: '11. Port d’Alcúdia: Sonnenaufgang und Delfinbeobachtung', text: 'Für Frühaufsteher eine der emotionalsten Touren: Sonnenaufgang auf dem Wasser plus Chance auf Delfine vor der Küste.', linkLabel: 'Sonnenaufgangs-Tour ansehen', linkHref: mallorcaOfferLinks.sunriseDolphins }
         ]
       },
       {
         id: 'bootstouren-mallorca',
         heading: 'Bootstouren auf Mallorca: der einfachste Ausflug mit Wow-Effekt',
         body: [
-          'Eine Bootstour ist oft der beste erste Ausflug auf Mallorca, weil sie wenig Vorbereitung braucht und sofort UrlaubsgefÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄhl liefert. Du siehst KÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄstenabschnitte, die vom Land aus schwer erreichbar sind, kannst baden und musst dich nicht um ParkplÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤tze oder Routen kÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄmmern.',
-          'Achte vor der Buchung auf Abfahrtsort, Dauer, SchattenplÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤tze, Badestopps und Stornierungsbedingungen. FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Familien sind kÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄrzere Touren oft angenehmer. FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Paare wirken Sonnenuntergangsfahrten oder kleinere Boote hochwertiger.'
+          'Eine Bootstour ist oft der beste erste Ausflug auf Mallorca, weil sie wenig Vorbereitung braucht und sofort Urlaubsgefühl liefert. Du siehst Küstenabschnitte, die vom Land aus schwer erreichbar sind, kannst baden und musst dich nicht um Parkplätze oder Routen kümmern.',
+          'Achte vor der Buchung auf Abfahrtsort, Dauer, Schattenplätze, Badestopps und Stornierungsbedingungen. Für Familien sind kürzere Touren oft angenehmer. Für Paare wirken Sonnenuntergangsfahrten oder kleinere Boote hochwertiger.'
         ],
         bullets: [
-          'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Familien: kurze Tour mit klarer RÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄckkehrzeit wÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤hlen.',
-          'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Paare: Katamaran, kleine Gruppe oder Sonnenuntergang prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen.',
-          'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Fotos: Vormittag oder spÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤tes Licht ist meist schÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶ner.',
-          'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr empfindliche Reisende: Wetter und Wellengang beachten.'
+          'Für Familien: kurze Tour mit klarer Rückkehrzeit wählen.',
+          'Für Paare: Katamaran, kleine Gruppe oder Sonnenuntergang prüfen.',
+          'Für Fotos: Vormittag oder spätes Licht ist meist schöner.',
+          'Für empfindliche Reisende: Wetter und Wellengang beachten.'
         ]
       },
       {
         id: 'palma-und-kultur',
-        heading: 'Palma, Kathedrale und Altstadt: ideal fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr einen halben Tag',
+        heading: 'Palma, Kathedrale und Altstadt: ideal für einen halben Tag',
         body: [
-          'Palma ist mehr als ein kurzer Einkaufsstopp. Die Kathedrale La Seu, kleine Gassen, CafÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â©s, Tapasbars und die Hafenpromenade machen die Hauptstadt zu einem der besten AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge, wenn du Kultur und Stadtleben in den Urlaub einbauen mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chtest.',
-          'Plane Palma nicht zu voll. Ein guter Ablauf ist: Kathedrale und Altstadt am Vormittag, danach Essen oder Kaffee, anschlieÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…ÄąĹşend RÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄckfahrt zum Hotel. So bleibt der Tag leicht und fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄhlt sich nicht wie ein Pflichtprogramm an.'
+          'Palma ist mehr als ein kurzer Einkaufsstopp. Die Kathedrale La Seu, kleine Gassen, Cafés, Tapasbars und die Hafenpromenade machen die Hauptstadt zu einem der besten Ausflüge, wenn du Kultur und Stadtleben in den Urlaub einbauen möchtest.',
+          'Plane Palma nicht zu voll. Ein guter Ablauf ist: Kathedrale und Altstadt am Vormittag, danach Essen oder Kaffee, anschließend Rückfahrt zum Hotel. So bleibt der Tag leicht und fühlt sich nicht wie ein Pflichtprogramm an.'
         ],
-        note: 'Praktischer Tipp: Wenn du mit dem Mietwagen nach Palma fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤hrst, prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfe vorher ParkhÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤user statt spontan in die Altstadt zu fahren.'
+        note: 'Praktischer Tipp: Wenn du mit dem Mietwagen nach Palma fährst, prüfe vorher Parkhäuser statt spontan in die Altstadt zu fahren.'
       },
       {
         id: 'tramuntana-soeller-valldemossa',
-        heading: 'Tramuntana, SÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺˇller und Valldemossa: Mallorca abseits der StrÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤nde',
+        heading: 'Tramuntana, Sóller und Valldemossa: Mallorca abseits der Strände',
         body: [
-          'Die Serra de Tramuntana zeigt Mallorca von seiner ruhigeren, dramatischeren Seite. BergstraÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…ÄąĹşen, Aussichtspunkte, SteindÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶rfer und kleine HÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤fen machen diese Region besonders wertvoll fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Reisende, die mehr als Hotel und Strand sehen wollen.',
-          'SÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺˇller und Port de SÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺˇller eignen sich gut fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr einen abwechslungsreichen Tagesausflug. Valldemossa und DeiÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â  sind kleiner, romantischer und besonders schÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶n fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr SpaziergÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤nge, CafÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â©s und Fotos. Wer leicht reisekrank wird, sollte kurvige Strecken einplanen und nicht zu spÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤t starten.'
+          'Die Serra de Tramuntana zeigt Mallorca von seiner ruhigeren, dramatischeren Seite. Bergstraßen, Aussichtspunkte, Steindörfer und kleine Häfen machen diese Region besonders wertvoll für Reisende, die mehr als Hotel und Strand sehen wollen.',
+          'Sóller und Port de Sóller eignen sich gut für einen abwechslungsreichen Tagesausflug. Valldemossa und Deià sind kleiner, romantischer und besonders schön für Spaziergänge, Cafés und Fotos. Wer leicht reisekrank wird, sollte kurvige Strecken einplanen und nicht zu spät starten.'
         ],
         table: {
-          columns: ['Ort', 'Passt gut fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr', 'Zeitbedarf'],
+          columns: ['Ort', 'Passt gut für', 'Zeitbedarf'],
           rows: [
-            ['SÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺˇller', 'Erstbesucher, Paare, Familien', 'Halbtag bis ganzer Tag'],
-            ['Port de SÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺˇller', 'Hafen, Essen, entspannter Spaziergang', '2 bis 4 Stunden'],
-            ['Valldemossa', 'Fotos, CafÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â©s, kleine Gassen', '2 bis 3 Stunden'],
-            ['DeiÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â ', 'Ruhige AtmosphÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤re, besondere Ausblicke', '2 bis 3 Stunden'],
+            ['Sóller', 'Erstbesucher, Paare, Familien', 'Halbtag bis ganzer Tag'],
+            ['Port de Sóller', 'Hafen, Essen, entspannter Spaziergang', '2 bis 4 Stunden'],
+            ['Valldemossa', 'Fotos, Cafés, kleine Gassen', '2 bis 3 Stunden'],
+            ['Deià', 'Ruhige Atmosphäre, besondere Ausblicke', '2 bis 3 Stunden'],
             ['Tramuntana-Route', 'Mietwagen, Natur, Aussichtspunkte', 'Ganzer Tag']
           ]
         }
       },
       {
         id: 'familienausfluege',
-        heading: 'Mallorca mit Kindern: AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge, die nicht zu kompliziert sind',
+        heading: 'Mallorca mit Kindern: Ausflüge, die nicht zu kompliziert sind',
         body: [
-          'Mit Kindern gewinnen die AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge, die verlÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤sslich, nicht zu lang und einfach zu organisieren sind. Gute Optionen sind kurze Bootstouren, HÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶hlen, Aquarium, MÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤rkte am Vormittag oder ein Ausflug in einen Ort mit Promenade und Eis-Pause.',
-          'Weniger ist hier oft besser. Ein Ausflug pro Tag reicht meistens aus. Plane Wasser, Sonnenschutz, Snacks und klare RÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄckfahrtzeiten ein. Besonders im Sommer solltest du AktivitÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ten in die Morgenstunden legen.'
+          'Mit Kindern gewinnen die Ausflüge, die verlässlich, nicht zu lang und einfach zu organisieren sind. Gute Optionen sind kurze Bootstouren, Höhlen, Aquarium, Märkte am Vormittag oder ein Ausflug in einen Ort mit Promenade und Eis-Pause.',
+          'Weniger ist hier oft besser. Ein Ausflug pro Tag reicht meistens aus. Plane Wasser, Sonnenschutz, Snacks und klare Rückfahrtzeiten ein. Besonders im Sommer solltest du Aktivitäten in die Morgenstunden legen.'
         ],
         bullets: [
           'Kurze Wege und klare Treffpunkte bevorzugen.',
-          'Bei Bootstouren Schatten und Toiletten prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen.',
-          'Bei HÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶hlen und Indoor-Zielen StoÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…ÄąĹşzeiten vermeiden.',
+          'Bei Bootstouren Schatten und Toiletten prüfen.',
+          'Bei Höhlen und Indoor-Zielen Stoßzeiten vermeiden.',
           'Nach dem Ausflug bewusst Zeit am Pool oder Strand lassen.'
         ]
       },
       {
         id: 'buchung-und-tipps',
         eyebrow: 'Buchungshilfe',
-        heading: 'So buchst du Mallorca-AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge ohne Stress',
+        heading: 'So buchst du Mallorca-Ausflüge ohne Stress',
         body: [
-          'Beliebte Touren auf Mallorca kÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶nnen in der Hauptsaison schnell ausgebucht sein. Das gilt besonders fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Bootstouren, kleine Gruppen, Sonnenuntergangsfahrten und AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge mit Abholung. Buche nicht jeden Urlaubstag vorab, aber sichere dir die wichtigsten Erlebnisse rechtzeitig.',
-          'Gute Buchungsseiten zeigen Bewertungen, Treffpunkt, Dauer, Sprache, Stornierungsregeln und enthaltene Leistungen. Genau diese Punkte entscheiden spÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ter darÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄber, ob ein Ausflug entspannt wird oder unnÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶tig Stress macht.'
+          'Beliebte Touren auf Mallorca können in der Hauptsaison schnell ausgebucht sein. Das gilt besonders für Bootstouren, kleine Gruppen, Sonnenuntergangsfahrten und Ausflüge mit Abholung. Buche nicht jeden Urlaubstag vorab, aber sichere dir die wichtigsten Erlebnisse rechtzeitig.',
+          'Gute Buchungsseiten zeigen Bewertungen, Treffpunkt, Dauer, Sprache, Stornierungsregeln und enthaltene Leistungen. Genau diese Punkte entscheiden später darüber, ob ein Ausflug entspannt wird oder unnötig Stress macht.'
         ],
         bullets: [
-          'Vor der Buchung prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen: Treffpunkt, Uhrzeit, Dauer, RÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄckfahrt.',
+          'Vor der Buchung prüfen: Treffpunkt, Uhrzeit, Dauer, Rückfahrt.',
           'Bewertungen lesen, aber auf aktuelle Kommentare achten.',
-          'Bei Familien immer Mindestalter und Hinweise zur Barrierefreiheit prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen.',
+          'Bei Familien immer Mindestalter und Hinweise zur Barrierefreiheit prüfen.',
           'Nicht nur den Preis vergleichen, sondern auch Leistung und Stornierung.'
         ],
         relatedLinks: [
-          { label: 'Mallorca-AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge bei GetYourGuide ansehen', href: mallorcaExcursionsUrl, external: true },
-          { label: 'Weitere AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge entdecken', href: '/ausfluege/' },
-          { label: 'eSIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Spanien prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen', href: '/esim/' }
+          { label: 'Mallorca-Ausflüge bei GetYourGuide ansehen', href: mallorcaExcursionsUrl, external: true },
+          { label: 'Weitere Ausflüge entdecken', href: '/ausfluege/' },
+          { label: 'eSIM für Spanien prüfen', href: '/esim/' }
         ]
       }
     ],
     finalCta: {
-      eyebrow: 'NÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤chster Schritt',
-      heading: 'WÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤hle zuerst 1 bis 2 Highlights statt zehn halbe PlÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ne',
-      text: 'Wenn du nur wenige AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge bewusst auswÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤hlst, bleibt Mallorca entspannt und trotzdem besonders. Starte mit einer Bootstour oder Tramuntana-Tour und ergÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤nze Palma, wenn du Kultur und Stadtleben mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chtest.',
-      primary: { label: 'Mallorca-AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge ansehen', href: mallorcaExcursionsUrl, external: true },
+      eyebrow: 'Nächster Schritt',
+      heading: 'Wähle zuerst 1 bis 2 Highlights statt zehn halbe Pläne',
+      text: 'Wenn du nur wenige Ausflüge bewusst auswählst, bleibt Mallorca entspannt und trotzdem besonders. Starte mit einer Bootstour oder Tramuntana-Tour und ergänze Palma, wenn du Kultur und Stadtleben möchtest.',
+      primary: { label: 'Mallorca-Ausflüge ansehen', href: mallorcaExcursionsUrl, external: true },
       secondary: { label: 'Mehr Reiseideen', href: '/blog/' }
     },
     faq: [
-      { question: 'Was sind die besten AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge auf Mallorca?', answer: 'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr die meisten Urlauber gehÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶ren Bootstouren, Palma, SÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺˇller, Valldemossa, die Serra de Tramuntana und die DrachenhÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶hlen zu den besten AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄgen auf Mallorca.' },
-      { question: 'Welcher Mallorca-Ausflug lohnt sich beim ersten Urlaub am meisten?', answer: 'Beim ersten Mallorca-Urlaub lohnt sich meistens eine Bootstour oder ein Tagesausflug nach SÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺˇller und in die Tramuntana, weil du damit Meer, Landschaft und InselgefÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄhl gut kombinierst.' },
-      { question: 'Sind AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge auf Mallorca mit Kindern sinnvoll?', answer: 'Ja. Besonders kurze Bootstouren, HÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶hlen, Aquarium, MÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤rkte am Vormittag und Orte mit Promenade eignen sich gut fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Familien.' },
-      { question: 'Wann sollte man Mallorca-AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge buchen?', answer: 'In der Hauptsaison solltest du beliebte AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge einige Tage im Voraus buchen. Kleine Gruppen, Sonnenuntergangstouren und Bootstouren sind oft schneller ausgebucht.' },
-      { question: 'Braucht man auf Mallorca einen Mietwagen fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge?', answer: 'Nicht immer. FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Palma, Bootstouren und viele gefÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄhrte AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge reicht oft ein Transfer oder Ä‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶ffentlicher Verkehr. FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Tramuntana, kleine DÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶rfer und flexible Routen ist ein Mietwagen praktischer.' },
-      { question: 'Welche AusflÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄge auf Mallorca sind bei schlechtem Wetter gut?', answer: 'Bei schlechtem Wetter passen Palma, Museen, Markthallen, Aquarium, HÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶hlen oder kulinarische Touren besser als Bootstouren und Aussichtspunkte.' },
-      { question: 'Lohnt sich eine Bootstour auf Mallorca?', answer: 'Ja, besonders wenn du Buchten, Badestopps und KÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄstenabschnitte sehen mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chtest, die vom Land aus schwer erreichbar sind.' },
-      { question: 'Was sollte man vor einer Ausflugsbuchung prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen?', answer: 'PrÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfe Dauer, Treffpunkt, Sprache, Abholung, Stornierung, Mindestalter, Bewertungen und was im Preis enthalten ist.' }
+      { question: 'Was sind die besten Ausflüge auf Mallorca?', answer: 'Für die meisten Urlauber gehören Bootstouren, Palma, Sóller, Valldemossa, die Serra de Tramuntana und die Drachenhöhlen zu den besten Ausflügen auf Mallorca.' },
+      { question: 'Welcher Mallorca-Ausflug lohnt sich beim ersten Urlaub am meisten?', answer: 'Beim ersten Mallorca-Urlaub lohnt sich meistens eine Bootstour oder ein Tagesausflug nach Sóller und in die Tramuntana, weil du damit Meer, Landschaft und Inselgefühl gut kombinierst.' },
+      { question: 'Sind Ausflüge auf Mallorca mit Kindern sinnvoll?', answer: 'Ja. Besonders kurze Bootstouren, Höhlen, Aquarium, Märkte am Vormittag und Orte mit Promenade eignen sich gut für Familien.' },
+      { question: 'Wann sollte man Mallorca-Ausflüge buchen?', answer: 'In der Hauptsaison solltest du beliebte Ausflüge einige Tage im Voraus buchen. Kleine Gruppen, Sonnenuntergangstouren und Bootstouren sind oft schneller ausgebucht.' },
+      { question: 'Braucht man auf Mallorca einen Mietwagen für Ausflüge?', answer: 'Nicht immer. Für Palma, Bootstouren und viele geführte Ausflüge reicht oft ein Transfer oder öffentlicher Verkehr. Für Tramuntana, kleine Dörfer und flexible Routen ist ein Mietwagen praktischer.' },
+      { question: 'Welche Ausflüge auf Mallorca sind bei schlechtem Wetter gut?', answer: 'Bei schlechtem Wetter passen Palma, Museen, Markthallen, Aquarium, Höhlen oder kulinarische Touren besser als Bootstouren und Aussichtspunkte.' },
+      { question: 'Lohnt sich eine Bootstour auf Mallorca?', answer: 'Ja, besonders wenn du Buchten, Badestopps und Küstenabschnitte sehen möchtest, die vom Land aus schwer erreichbar sind.' },
+      { question: 'Was sollte man vor einer Ausflugsbuchung prüfen?', answer: 'Prüfe Dauer, Treffpunkt, Sprache, Abholung, Stornierung, Mindestalter, Bewertungen und was im Preis enthalten ist.' }
     ]
   },
   {
     slug: 'esim-deutschland-lohnt-sich',
-    title: 'eSIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Deutschland: Lohnt sich das fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Reisende wirklich?',
+    title: 'eSIM für Deutschland: Lohnt sich das für Reisende wirklich?',
     seoTitle: 'eSIM Deutschland: Wann sie sich lohnt, Vorteile, Kostenfallen & Tipps',
-    description: 'Lohnt sich eine eSIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Deutschland? Der klare Guide fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Reisende: Vorteile, Nachteile, Datenvolumen, Aktivierung, Vergleich mit SIM-Karte und Roaming.',
+    description: 'Lohnt sich eine eSIM für Deutschland? Der klare Guide für Reisende: Vorteile, Nachteile, Datenvolumen, Aktivierung, Vergleich mit SIM-Karte und Roaming.',
     date: '2026-05-03',
     dateModified: '2026-06-26',
     category: 'eSIM',
     keywords: 'eSIM Deutschland, eSIM Deutschland Reise, mobile Daten Deutschland, Airalo Deutschland, eSIM lohnt sich',
     image: images.blog.esim,
-    alt: 'Smartphone mit eSIM auf einer deutschen StadtstraÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…ÄąĹşe mit Bahn im Hintergrund',
-    intro: 'Eine eSIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Deutschland kann sehr praktisch sein, wenn du nach der Ankunft sofort mobile Daten brauchst, keine Plastikkarte kaufen mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chtest und dein Smartphone eSIM unterstÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄtzt.',
-    keyFacts: ['Sinnvoll fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Navigation, Bahn-Apps und Messenger', 'Aktivierung meist vor der Reise mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶glich', 'Kein SIM-Kartenwechsel nÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶tig', 'GerÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤tekompatibilitÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤t vorher prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen'],
+    alt: 'Smartphone mit eSIM auf einer deutschen Stadtstraße mit Bahn im Hintergrund',
+    intro: 'Eine eSIM für Deutschland kann sehr praktisch sein, wenn du nach der Ankunft sofort mobile Daten brauchst, keine Plastikkarte kaufen möchtest und dein Smartphone eSIM unterstützt.',
+    keyFacts: ['Sinnvoll für Navigation, Bahn-Apps und Messenger', 'Aktivierung meist vor der Reise möglich', 'Kein SIM-Kartenwechsel nötig', 'Gerätekompatibilität vorher prüfen'],
     quickAnswer: {
-      heading: 'Lohnt sich eine eSIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Deutschland?',
-      text: 'Ja, eine eSIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Deutschland lohnt sich besonders fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Reisende, GeschÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ftsbesuche, Zwischenstopps und alle, die sofort mobile Daten ohne lokale SIM-Karte nutzen mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chten. Wenn dein bestehender Tarif gutes EU-Roaming enthÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤lt, kann Roaming aber ausreichend sein.'
+      heading: 'Lohnt sich eine eSIM für Deutschland?',
+      text: 'Ja, eine eSIM für Deutschland lohnt sich besonders für Reisende, Geschäftsbesuche, Zwischenstopps und alle, die sofort mobile Daten ohne lokale SIM-Karte nutzen möchten. Wenn dein bestehender Tarif gutes EU-Roaming enthält, kann Roaming aber ausreichend sein.'
     },
     sections: [
       {
         id: 'fuer-wen-lohnt-sich-esim',
         eyebrow: 'Kurzentscheidung',
-        heading: 'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr wen lohnt sich eine eSIM in Deutschland?',
+        heading: 'Für wen lohnt sich eine eSIM in Deutschland?',
         body: [
-          'Eine eSIM ist vor allem dann stark, wenn du schnell online sein mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chtest: fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Navigation vom Flughafen, Bahnverbindungen, Hotel-Check-in, Messenger, Ä‚â€žĂ˘â‚¬ĹˇĂ„Ä…Ă˘â‚¬Ĺźbersetzungen, Tickets und kurzfristige ReiseÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤nderungen.',
+          'Eine eSIM ist vor allem dann stark, wenn du schnell online sein möchtest: für Navigation vom Flughafen, Bahnverbindungen, Hotel-Check-in, Messenger, Übersetzungen, Tickets und kurzfristige Reiseänderungen.',
           'Sie ist weniger spannend, wenn du bereits einen Mobilfunktarif mit gutem Deutschland- oder EU-Datenvolumen hast. Genau deshalb solltest du nicht nur fragen, ob eSIM modern ist, sondern ob sie in deinem konkreten Reiseszenario Arbeit spart.'
         ],
         cards: [
-          { title: 'Sehr sinnvoll', text: 'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Reisende von auÄ‚â€žĂ˘â‚¬ĹˇĂ„Ä…ÄąĹşerhalb der EU, Business-Trips, kurze Aufenthalte und Menschen, die sofort Internet brauchen.' },
-          { title: 'Oft ausreichend', text: 'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr EU-Reisende mit gutem Roaming im bestehenden Vertrag.' },
-          { title: 'Vorher prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen', text: 'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Ä‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ltere Smartphones, Dual-SIM-SonderfÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤lle oder Reisen in Regionen mit schwÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤cherer Netzabdeckung.' }
+          { title: 'Sehr sinnvoll', text: 'Für Reisende von außerhalb der EU, Business-Trips, kurze Aufenthalte und Menschen, die sofort Internet brauchen.' },
+          { title: 'Oft ausreichend', text: 'Für EU-Reisende mit gutem Roaming im bestehenden Vertrag.' },
+          { title: 'Vorher prüfen', text: 'Für ältere Smartphones, Dual-SIM-Sonderfälle oder Reisen in Regionen mit schwächerer Netzabdeckung.' }
         ]
       },
       {
         id: 'esim-vs-sim-vs-roaming',
         heading: 'eSIM, klassische SIM-Karte oder Roaming: was ist besser?',
         body: [
-          'Die beste LÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶sung hÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngt von Aufenthaltsdauer, Datenbedarf, Komfortwunsch und deinem vorhandenen Vertrag ab. Eine eSIM gewinnt meistens beim Komfort. Eine lokale SIM kann bei lÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngeren Aufenthalten interessant sein. Roaming ist bequem, wenn es in deinem Tarif fair enthalten ist.'
+          'Die beste Lösung hängt von Aufenthaltsdauer, Datenbedarf, Komfortwunsch und deinem vorhandenen Vertrag ab. Eine eSIM gewinnt meistens beim Komfort. Eine lokale SIM kann bei längeren Aufenthalten interessant sein. Roaming ist bequem, wenn es in deinem Tarif fair enthalten ist.'
         ],
         table: {
-          columns: ['Option', 'Vorteile', 'Nachteile', 'Passt besonders fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr'],
+          columns: ['Option', 'Vorteile', 'Nachteile', 'Passt besonders für'],
           rows: [
-            ['eSIM', 'Schnell aktivierbar, keine Plastikkarte, oft vor der Reise planbar.', 'Smartphone muss eSIM unterstÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄtzen, meist datenfokussiert.', 'Kurzreisen, GeschÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ftsreisen, sofort online sein.'],
-            ['Klassische SIM', 'Kann bei lÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngeren Aufenthalten attraktiv sein, oft lokale Nummer mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶glich.', 'Kauf vor Ort, SIM-Wechsel, Ä‚â€žĂ˘â‚¬ĹˇÄ‚ËĂ˘â€šÂ¬Ă˘â‚¬Ĺ›ffnungszeiten und Registrierung mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶glich.', 'LÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngere Aufenthalte oder spezielle lokale Tarife.'],
-            ['Roaming', 'Kein zusÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤tzlicher Kauf, keine neue Installation.', 'Kann je nach Tarif teuer oder begrenzt sein.', 'Reisende mit gutem vorhandenen Tarif.']
+            ['eSIM', 'Schnell aktivierbar, keine Plastikkarte, oft vor der Reise planbar.', 'Smartphone muss eSIM unterstützen, meist datenfokussiert.', 'Kurzreisen, Geschäftsreisen, sofort online sein.'],
+            ['Klassische SIM', 'Kann bei längeren Aufenthalten attraktiv sein, oft lokale Nummer möglich.', 'Kauf vor Ort, SIM-Wechsel, \u00d6ffnungszeiten und Registrierung m\u00f6glich.', 'Längere Aufenthalte oder spezielle lokale Tarife.'],
+            ['Roaming', 'Kein zusätzlicher Kauf, keine neue Installation.', 'Kann je nach Tarif teuer oder begrenzt sein.', 'Reisende mit gutem vorhandenen Tarif.']
           ]
         }
       },
@@ -226,48 +226,48 @@ export const posts = [
         id: 'datenvolumen',
         heading: 'Wie viel Datenvolumen brauchst du in Deutschland?',
         body: [
-          'Viele Reisende Ä‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄberschÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤tzen oder unterschÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤tzen ihren Datenbedarf. FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Messenger, Karten, Tickets und kurze Recherchen reichen kleinere Pakete oft aus. FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Video, Hotspot am Laptop oder lÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngere Arbeitstage brauchst du deutlich mehr.',
-          'Wichtig: Hotel-WLAN, Bahn-WLAN und Ä‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶ffentliche Netzwerke kÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶nnen helfen, sind aber nicht immer stabil. Eine eSIM ist vor allem dann wertvoll, wenn du unabhÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngig bleiben willst.'
+          'Viele Reisende überschätzen oder unterschätzen ihren Datenbedarf. Für Messenger, Karten, Tickets und kurze Recherchen reichen kleinere Pakete oft aus. Für Video, Hotspot am Laptop oder längere Arbeitstage brauchst du deutlich mehr.',
+          'Wichtig: Hotel-WLAN, Bahn-WLAN und öffentliche Netzwerke können helfen, sind aber nicht immer stabil. Eine eSIM ist vor allem dann wertvoll, wenn du unabhängig bleiben willst.'
         ],
         table: {
           columns: ['Nutzung', 'Typischer Bedarf', 'Hinweis'],
           rows: [
-            ['Navigation, Tickets, Messenger', 'niedrig bis mittel', 'Gut fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr kurze Citytrips.'],
+            ['Navigation, Tickets, Messenger', 'niedrig bis mittel', 'Gut für kurze Citytrips.'],
             ['Social Media, viele Fotos, Recherchen', 'mittel', 'Mehr Puffer einplanen.'],
-            ['Video, Hotspot, Arbeit am Laptop', 'hoch', 'GrÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶Ä‚â€žĂ˘â‚¬ĹˇĂ„Ä…ÄąĹşeres Paket oder WLAN kombinieren.'],
-            ['Familie mit mehreren GerÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ten', 'hoch', 'Nicht jedes eSIM-Paket erlaubt Hotspot.']
+            ['Video, Hotspot, Arbeit am Laptop', 'hoch', 'Größeres Paket oder WLAN kombinieren.'],
+            ['Familie mit mehreren Geräten', 'hoch', 'Nicht jedes eSIM-Paket erlaubt Hotspot.']
           ]
         }
       },
       {
         id: 'aktivierung',
         eyebrow: 'Praxis',
-        heading: 'So aktivierst du eine eSIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Deutschland ohne Stress',
+        heading: 'So aktivierst du eine eSIM für Deutschland ohne Stress',
         body: [
-          'Die Aktivierung ist meistens einfach, aber du solltest sie nicht erst dann testen, wenn du schon ohne WLAN am Bahnhof stehst. Installiere die eSIM nach MÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶glichkeit vor der Reise und aktiviere die mobile Datennutzung dann passend zur Ankunft.',
-          'Je nach Anbieter bekommst du einen QR-Code oder installierst die eSIM direkt Ä‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄber eine App. FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr die Einrichtung brauchst du in der Regel kurz eine stabile Internetverbindung.'
+          'Die Aktivierung ist meistens einfach, aber du solltest sie nicht erst dann testen, wenn du schon ohne WLAN am Bahnhof stehst. Installiere die eSIM nach Möglichkeit vor der Reise und aktiviere die mobile Datennutzung dann passend zur Ankunft.',
+          'Je nach Anbieter bekommst du einen QR-Code oder installierst die eSIM direkt über eine App. Für die Einrichtung brauchst du in der Regel kurz eine stabile Internetverbindung.'
         ],
         bullets: [
-          'Vor dem Kauf prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen, ob dein Smartphone eSIM unterstÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄtzt.',
+          'Vor dem Kauf prüfen, ob dein Smartphone eSIM unterstützt.',
           'eSIM-Anleitung speichern oder Screenshot der wichtigsten Schritte machen.',
-          'Installation mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶glichst im WLAN vorbereiten.',
-          'Datenroaming fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr die eSIM nur dann aktivieren, wenn der Anbieter es verlangt.',
-          'Nach der Ankunft testen: Browser, Karten-App und Messenger Ä‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶ffnen.'
+          'Installation möglichst im WLAN vorbereiten.',
+          'Datenroaming für die eSIM nur dann aktivieren, wenn der Anbieter es verlangt.',
+          'Nach der Ankunft testen: Browser, Karten-App und Messenger öffnen.'
         ]
       },
       {
         id: 'fehler-vermeiden',
-        heading: 'Die hÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ufigsten Fehler bei eSIM in Deutschland',
+        heading: 'Die häufigsten Fehler bei eSIM in Deutschland',
         body: [
-          'Die meisten Probleme entstehen nicht durch die eSIM selbst, sondern durch falsche Erwartungen oder eine zu spÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤te Einrichtung. PrÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfe deshalb KompatibilitÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤t, Laufzeit, Datenvolumen, Hotspot-Regeln und den Startzeitpunkt des Pakets.',
-          'Besonders wichtig ist der Unterschied zwischen Installation und Aktivierung. Manche Pakete starten erst bei Verbindung im Zielland, andere kÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶nnen frÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄher laufen. Lies die Anbieterhinweise vor dem Kauf.'
+          'Die meisten Probleme entstehen nicht durch die eSIM selbst, sondern durch falsche Erwartungen oder eine zu späte Einrichtung. Prüfe deshalb Kompatibilität, Laufzeit, Datenvolumen, Hotspot-Regeln und den Startzeitpunkt des Pakets.',
+          'Besonders wichtig ist der Unterschied zwischen Installation und Aktivierung. Manche Pakete starten erst bei Verbindung im Zielland, andere können früher laufen. Lies die Anbieterhinweise vor dem Kauf.'
         ],
         bullets: [
-          'Zu kleines Datenpaket wÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤hlen und dann stÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ndig sparen mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄssen.',
+          'Zu kleines Datenpaket wählen und dann ständig sparen müssen.',
           'Erst nach der Ankunft ohne WLAN mit der Einrichtung beginnen.',
-          'Nicht prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen, ob das GerÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤t entsperrt und eSIM-fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤hig ist.',
-          'Verwechseln, welche SIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr mobile Daten aktiv ist.',
-          'Hotspot erwarten, obwohl das Paket ihn nicht unterstÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄtzt.'
+          'Nicht prüfen, ob das Gerät entsperrt und eSIM-fähig ist.',
+          'Verwechseln, welche SIM für mobile Daten aktiv ist.',
+          'Hotspot erwarten, obwohl das Paket ihn nicht unterstützt.'
         ]
       },
       {
@@ -275,32 +275,32 @@ export const posts = [
         eyebrow: 'Empfehlung',
         heading: 'Wann wir zur eSIM raten und wann nicht',
         body: [
-          'Wir raten zur eSIM, wenn du fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Deutschland eine einfache, schnelle und planbare DatenlÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶sung suchst. Sie ist besonders angenehm fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Menschen, die nicht nach einem lokalen Shop suchen mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chten und direkt nach der Ankunft online sein wollen.',
-          'Wir wÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄrden zuerst deinen bestehenden Tarif prÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfen, wenn du aus der EU kommst oder bereits viel Datenvolumen in Deutschland nutzen kannst. Dann ist eine zusÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤tzliche eSIM eher ein Backup als Pflicht.'
+          'Wir raten zur eSIM, wenn du für Deutschland eine einfache, schnelle und planbare Datenlösung suchst. Sie ist besonders angenehm für Menschen, die nicht nach einem lokalen Shop suchen möchten und direkt nach der Ankunft online sein wollen.',
+          'Wir würden zuerst deinen bestehenden Tarif prüfen, wenn du aus der EU kommst oder bereits viel Datenvolumen in Deutschland nutzen kannst. Dann ist eine zusätzliche eSIM eher ein Backup als Pflicht.'
         ],
         relatedLinks: [
           { label: 'Deutschland-eSIM bei Airalo ansehen', href: germanyEsimUrl, external: true },
-          { label: 'eSIM-ReiseÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄbersicht Ä‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶ffnen', href: '/esim/' },
+          { label: 'eSIM-Reiseübersicht öffnen', href: '/esim/' },
           { label: 'Affiliate-Hinweis lesen', href: '/affiliate-hinweis/' }
         ]
       }
     ],
     finalCta: {
-      eyebrow: 'NÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤chster Schritt',
-      heading: 'PrÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfe zuerst dein Handy, dann das passende Datenpaket',
-      text: 'Wenn dein Smartphone eSIM unterstÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄtzt und du in Deutschland unkompliziert online sein mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chtest, ist eine Reise-eSIM eine sehr bequeme LÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶sung. FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr lÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngere Aufenthalte lohnt sich zusÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤tzlich ein Vergleich mit lokalen Tarifen.',
+      eyebrow: 'Nächster Schritt',
+      heading: 'Prüfe zuerst dein Handy, dann das passende Datenpaket',
+      text: 'Wenn dein Smartphone eSIM unterstützt und du in Deutschland unkompliziert online sein möchtest, ist eine Reise-eSIM eine sehr bequeme Lösung. Für längere Aufenthalte lohnt sich zusätzlich ein Vergleich mit lokalen Tarifen.',
       primary: { label: 'Deutschland-eSIM ansehen', href: germanyEsimUrl, external: true },
       secondary: { label: 'Mehr eSIM-Ziele', href: '/esim/' }
     },
     faq: [
       { question: 'Was ist eine eSIM?', answer: 'Eine eSIM ist eine digitale SIM, die direkt im Smartphone eingerichtet wird. Du brauchst keine physische SIM-Karte, sondern aktivierst ein Mobilfunkprofil digital.' },
-      { question: 'Lohnt sich eine eSIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Deutschland?', answer: 'Ja, besonders fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Reisende, die sofort mobile Daten brauchen, keine lokale SIM kaufen mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chten und ein eSIM-fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤higes Smartphone haben.' },
-      { question: 'Brauche ich WLAN zur eSIM-Aktivierung?', answer: 'Meistens brauchst du fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Installation oder Aktivierung kurz WLAN oder eine bestehende Internetverbindung. Deshalb ist Vorbereitung vor der Reise sinnvoll.' },
-      { question: 'Funktioniert eSIM auf jedem Smartphone?', answer: 'Nein. Dein Smartphone muss eSIM unterstÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄtzen und darf nicht fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr andere Anbieter gesperrt sein. PrÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄfe das vor dem Kauf.' },
-      { question: 'Ist eSIM besser als Roaming?', answer: 'Eine eSIM ist oft besser, wenn dein Roaming teuer oder begrenzt ist. Wenn dein vorhandener Tarif gutes Roaming in Deutschland enthÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤lt, kann Roaming ausreichen.' },
-      { question: 'Kann ich meine normale SIM parallel weiter nutzen?', answer: 'Auf vielen modernen Smartphones ja. Du kannst oft deine normale SIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Anrufe behalten und die eSIM fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr mobile Daten verwenden.' },
-      { question: 'Wie viel Datenvolumen brauche ich fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr eine Deutschland-Reise?', answer: 'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Navigation, Tickets und Messenger reicht oft ein kleineres Paket. FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Social Media, Hotspot oder Arbeit am Laptop solltest du mehr Datenvolumen einplanen.' },
-      { question: 'Kann ich mit einer eSIM telefonieren?', answer: 'Viele Reise-eSIMs sind reine Datenpakete. Telefonie lÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤uft dann Ä‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄber Messenger-Apps oder deine normale SIM, wenn sie aktiv bleibt.' }
+      { question: 'Lohnt sich eine eSIM für Deutschland?', answer: 'Ja, besonders für Reisende, die sofort mobile Daten brauchen, keine lokale SIM kaufen möchten und ein eSIM-fähiges Smartphone haben.' },
+      { question: 'Brauche ich WLAN zur eSIM-Aktivierung?', answer: 'Meistens brauchst du für Installation oder Aktivierung kurz WLAN oder eine bestehende Internetverbindung. Deshalb ist Vorbereitung vor der Reise sinnvoll.' },
+      { question: 'Funktioniert eSIM auf jedem Smartphone?', answer: 'Nein. Dein Smartphone muss eSIM unterstützen und darf nicht für andere Anbieter gesperrt sein. Prüfe das vor dem Kauf.' },
+      { question: 'Ist eSIM besser als Roaming?', answer: 'Eine eSIM ist oft besser, wenn dein Roaming teuer oder begrenzt ist. Wenn dein vorhandener Tarif gutes Roaming in Deutschland enthält, kann Roaming ausreichen.' },
+      { question: 'Kann ich meine normale SIM parallel weiter nutzen?', answer: 'Auf vielen modernen Smartphones ja. Du kannst oft deine normale SIM für Anrufe behalten und die eSIM für mobile Daten verwenden.' },
+      { question: 'Wie viel Datenvolumen brauche ich für eine Deutschland-Reise?', answer: 'Für Navigation, Tickets und Messenger reicht oft ein kleineres Paket. Für Social Media, Hotspot oder Arbeit am Laptop solltest du mehr Datenvolumen einplanen.' },
+      { question: 'Kann ich mit einer eSIM telefonieren?', answer: 'Viele Reise-eSIMs sind reine Datenpakete. Telefonie läuft dann über Messenger-Apps oder deine normale SIM, wenn sie aktiv bleibt.' }
     ]
   },
   {
@@ -458,32 +458,32 @@ export const posts = [
   {
     slug: 'pauschalreise-oder-hotel-separat',
     title: 'Pauschalreise oder Hotel separat buchen?',
-    description: 'Pauschalreise oder einzelne Buchung? Der kurze Vergleich fÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr normale Urlaubsreisen.',
+    description: 'Pauschalreise oder einzelne Buchung? Der kurze Vergleich für normale Urlaubsreisen.',
     date: '2026-05-05',
     category: 'Pauschalreisen',
     image: images.blog.pauschalreise,
     alt: 'Reisepass, Sonnenbrille und Urlaubsplanung auf einem Tisch',
-    intro: 'Eine Pauschalreise ist oft bequemer, eine separate Buchung kann flexibler sein. Die bessere Wahl hÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤ngt von Reiseziel, Budget und Komfortwunsch ab.',
+    intro: 'Eine Pauschalreise ist oft bequemer, eine separate Buchung kann flexibler sein. Die bessere Wahl hängt von Reiseziel, Budget und Komfortwunsch ab.',
     sections: [
       {
         id: 'pauschalreise',
         heading: 'Wann passt eine Pauschalreise?',
-        body: ['Sie passt gut, wenn du Flug, Hotel und Transfer mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶glichst einfach zusammen buchen mÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¶chtest.']
+        body: ['Sie passt gut, wenn du Flug, Hotel und Transfer möglichst einfach zusammen buchen möchtest.']
       },
       {
         id: 'separat-buchen',
         heading: 'Wann separat buchen?',
-        body: ['Separat buchen lohnt sich, wenn du mehrere Orte kombinieren, besondere Hotels wÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€šĂ‚Â¤hlen oder sehr flexibel reisen willst.']
+        body: ['Separat buchen lohnt sich, wenn du mehrere Orte kombinieren, besondere Hotels wählen oder sehr flexibel reisen willst.']
       },
       {
         id: 'kurzvergleich',
         heading: 'Kurzvergleich',
-        body: ['Pauschalreisen sind bequem und Ä‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄbersichtlich. Einzelbuchungen geben mehr Freiheit, brauchen aber mehr Planung.']
+        body: ['Pauschalreisen sind bequem und übersichtlich. Einzelbuchungen geben mehr Freiheit, brauchen aber mehr Planung.']
       }
     ],
     faq: [
-      { question: 'Ist eine Pauschalreise immer gÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄnstiger?', answer: 'Nein. Sie kann gÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄnstiger sein, muss es aber nicht. Vergleiche immer Gesamtpreis und Leistungen.' },
-      { question: 'FÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄr Familien sinnvoll?', answer: 'Oft ja, weil Flug, Hotel und Transfer klar gebÄ‚â€žĂ˘â‚¬ĹˇÄ‚â€žĂ‹ĹĄndelt sind.' }
+      { question: 'Ist eine Pauschalreise immer günstiger?', answer: 'Nein. Sie kann günstiger sein, muss es aber nicht. Vergleiche immer Gesamtpreis und Leistungen.' },
+      { question: 'Für Familien sinnvoll?', answer: 'Oft ja, weil Flug, Hotel und Transfer klar gebündelt sind.' }
     ]
   }
 ];

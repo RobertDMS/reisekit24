@@ -1554,7 +1554,7 @@ p {
   border-radius: 999px;
   background: var(--orange-soft);
   color: var(--orange);
-  content: "Ă˘Ĺ›â€ś";
+  content: "\2713";
   font-size: 0.82rem;
   font-weight: 900;
 }
